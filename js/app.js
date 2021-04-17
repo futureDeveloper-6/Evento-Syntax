@@ -3,7 +3,7 @@
 
 let carts = document.querySelectorAll('.add-cart');
 
-let producsArr = [
+let productsArr = [
 
   { name: 'light1', price: 15.25 + 'JD', inCart: 0 },
   { name: 'light2', price: 17.55 + 'JD', inCart: 0 },
@@ -23,7 +23,7 @@ let producsArr = [
 for (let i = 0; i < carts.length; i++) {
 
   carts[i].addEventListener('click', () => {
-    cartsNum(producsArr[i]);
+    cartsNum(productsArr[i]);
 
   });
 
@@ -68,10 +68,14 @@ function setItems(product) {
 
   if (cartItems != null) {
     if (cartItems[product.name] == undefined){
+      cartItems={
+        ...cartItems,
+        [product.name]:product
 
   }
+}
     cartItems[product.name].inCart += 1;
- 
+
 }
   else {
 
@@ -84,8 +88,3 @@ function setItems(product) {
 }
 
 productsInsideCart();
-
-
-
-
-
