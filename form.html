@@ -11,6 +11,8 @@
    
     <link rel="stylesheet" href="css/form.css">
 
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/form.css">
 </head>
 
 <body>
@@ -46,6 +48,36 @@
         </div>
 
     </footer>
+        <li><a href="index.html">Add</a></li>
+    </header>
+
+    <main>
+
+        <form action="" id="serviceForm">
+            <fieldset>
+
+                <label for="companyName">Company Name</label>
+                <input type="text" autocomplete="off" placeholder="Enter the name" id="companyField"
+                    name="companyField">
+                <label for="serviceName">The Service</label>
+                <input type="text" autocomplete="off" placeholder="Enter the service name" id="serviceField"
+                    name="serviceField">
+                <label for="price">The price</label>
+                <input type="number" step="0.01" placeholder="Enter the price" id="priceField" name="priceField">
+                <input type="submit" value="click here to add service">
+            </fieldset>
+        </form>
+        <div id="theResults">
+
+            </ul>
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="js/form.js"> </script>
 
 </body>
 
