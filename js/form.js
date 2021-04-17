@@ -29,13 +29,16 @@ theResults.appendChild(theFormList);
 
 //the render function
 function renderService() {
+
+    theFormList.textContent="";
     for (let i = 0; i < Service.allService.length; i++) {
              let list = document.createElement('li');
         theFormList.appendChild(list);
-        list.textContent = `The company name is ${Service.allService[i].companyName} and the service is ${Service.allService[i].serviceName} and the price is ${Service.allService[i].price} JD`;
+        list.textContent = `The company name is : ${Service.allService[i].companyName} and the service : is ${Service.allService[i].serviceName} and the price ( ${Service.allService[i].price} JD)`;
     //Service.allService=[];    
     }
-       
+    
+    
 }
 
 

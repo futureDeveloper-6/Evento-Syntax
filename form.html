@@ -8,10 +8,10 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
-   
-    <link rel="stylesheet" href="css/form.css">
-
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/form.css">
 </head>
 
@@ -22,15 +22,55 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="html/products.html">services</a></li>
-                <li><a href="html/form.html">Add</a></li>
+                <li><a href="form.html">Add</a></li>
                 <li><a href="aboutus.html">About us</a></li>
             </ul>
         </nav>
 
     </header>
     <main>
+        <form action="" id="serviceForm">
+            <fieldset>
 
-        
+                <label for="companyName">Company Name</label>
+                <br>
+                <br>
+
+                <input type="text" autocomplete="off" placeholder="Enter the name" id="companyField"
+                    name="companyField">
+                <br>
+                <br>
+                <br>
+
+                <label for="serviceName">The Service</label>
+                <br>
+                <br>
+
+                <input type="text" autocomplete="off" placeholder="Enter the service name" id="serviceField"
+                    name="serviceField">
+                <br>
+                <br>
+                <br>
+
+                <label for="price">The price</label>
+                <br>
+                <br>
+
+                <input type="number" step="0.01" placeholder="Enter the price" id="priceField" name="priceField">
+                <br>
+                <br>
+                <br>
+
+
+                <input type="submit" value="click here to add service">
+            </fieldset>
+        </form>
+        <div id="theResults">
+
+            <ul></ul>
+
+        </div>
+
     </main>
     <footer>
         <h2>Evento-Syntax</h2>
@@ -48,35 +88,7 @@
         </div>
 
     </footer>
-        <li><a href="index.html">Add</a></li>
-    </header>
 
-    <main>
-
-        <form action="" id="serviceForm">
-            <fieldset>
-
-                <label for="companyName">Company Name</label>
-                <input type="text" autocomplete="off" placeholder="Enter the name" id="companyField"
-                    name="companyField">
-                <label for="serviceName">The Service</label>
-                <input type="text" autocomplete="off" placeholder="Enter the service name" id="serviceField"
-                    name="serviceField">
-                <label for="price">The price</label>
-                <input type="number" step="0.01" placeholder="Enter the price" id="priceField" name="priceField">
-                <input type="submit" value="click here to add service">
-            </fieldset>
-        </form>
-        <div id="theResults">
-
-            </ul>
-        </div>
-
-    </main>
-
-    <footer>
-
-    </footer>
     <script src="js/form.js"> </script>
 
 </body>
