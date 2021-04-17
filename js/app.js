@@ -68,8 +68,7 @@ function setItems(product) {
 
   if (cartItems != null) {
     if (cartItems[product.name] == undefined){
-    ...cartItems,
-    [product.name]: product
+
   }
     cartItems[product.name].inCart += 1;
  
