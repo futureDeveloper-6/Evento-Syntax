@@ -6,59 +6,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/aboutus.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
-   
-    <link rel="stylesheet" href="aboutus.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <img src="img/logo.jpg" alt="logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="html/products.html">services</a></li>
-                <li><a href="html/form.html">Add</a></li>
-                <li><a href="aboutus.html">About us</a></li>
-            </ul>
-        </nav>
-
+        <div class="header">
+            <img src="img/logo.png" alt="logo">
+            <nav>
+                <ul>
+                    <li><a target="_blank" href="index.html">HOME</a></li>
+                    <li><a target="_blank" href="#">SHOP</a></li>
+                    <li><a target="_blank" href="#">ADD SERVICE</a></li>
+                    <li><a class="active" target="_blank" href="#">ABOUT US</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
 
         <div id="row1">
-            <img src="images/amara.png" alt="amara pic" width="300px" height="300px">
-            <h1 class="haver"> Amara Al-Balkhi</h1>
-            <img src="images/eman.png" alt="eman pic" width="300px" height="300px">
-            <h1 class="haver"> Eman Mkhareez</h1>
-            <img src="images/sanabel.png" alt="sanabel pic" width="300px" height="300px">
-            <h1 class="haver">Sanabel Abu-Ezbead</h1>
+            <div> <img class="row1" src="images/amara.png" alt="amara pic">
+                <h3 class="name"> Amara Al-Balkhi</h3>
+            </div>
+            <div> <img class="row1" src="images/eman.png" alt="eman pic">
+                <h3 class="name"> Eman Mkhareez</h3>
+            </div>
+            <div> <img class="row1" src="images/haneen.png" alt="haneen pic">
+                <h3 class="name"> Haneen Abonser</h3>
+            </div>
+
         </div>
         <div id="row2">
-            <img src="images/haneen.png" alt="haneen pic" width="300px" height="300px">
-            <h1 class="haver"> Haneen Abonser</h1>
-            <img src="images/motasim.png" alt="motasim pic" width="300px" height="300px">
-            <h1 class="haver"> Motasim Al-Azzam</h1>
-            <img src="images/reem.png" alt="reem pic" width="300px" height="300px">
-            <h1 class="haver"> Reem Ayasrah</h1>
+            <div> <img class="row2" src="images/motasim.png" alt="motasim pic">
+                <h3 class="name"> Motasim Al-Azzam</h3>
+            </div>
+            <div> <img class="row2" src="images/reem.png" alt="reem pic">
+                <h3 class="name"> Reem Ayasrah</h3>
+            </div>
+            <div> <img class="row2" src="images/sanabel.png" alt="sanabel pic">
+                <h3 class="name">Sanabel Abu-Ezbead</h3>
+            </div>
+
+            <div class="animation">
+                <img class="animation" src="img/ballons.png" alt="animation">
+            </div>
     </main>
     <footer>
-        <h2>Evento-Syntax</h2>
+        <hr color="#31082F" width="95%">
+        <h2>Evento Syntax </h2>
         <div class="contact">
-            <p>Text us <img class="mail" src="img/mail-icon.png" alt="mail">: eventoSyntax@gmail.com</p>
-            <p>Tel <img class="tel" src="img/Tel.png" alt="Tel">: 0962111222333</p>
+            <a href="mailto:evento.syntax">Email Evento Syntax</a>
+            <p>Tel:0962111222333</p>
+
         </div>
+
         <div class="follow">
             <p>Follow us</p>
             <ul>
-                <li><a href=""><img class="icon" src="img/fb-icon.png" alt=""></a></li>
-                <li><a href=""><img class="icon" src="img/insta-icon.png" alt=""></a></li>
-                <li><a href=""><img class="icon" src="img/twit-icon.png" alt=""></a></li>
+                <li><a target="_blank" href="https://web.facebook.com/Evento-Syntax-103112688585013"><img
+                            class="icon facebook" src="img/facebook.png" alt=""></a></li>
+                <li><a target="_blank" href="https://twitter.com/EventoSyntax"><img class="icon twitter"
+                            src="img/twitter.png" alt=""></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/evento.syntax/"><img class="icon instagram"
+                            src="img/insta.png" alt=""></a></li>
             </ul>
         </div>
-
+        <div class="map">
+            <a target="_blank"
+                href="https://www.google.jo/maps/place/%D9%83%D9%84%D9%8A%D8%A9+%D9%84%D9%88%D9%85%D9%8A%D9%86%D9%88%D8%B3+%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%B9%D9%8A%D8%A9+%D8%A7%D9%84%D8%AA%D9%82%D9%86%D9%8A%D8%A9+-+(Luminus+Technical+University+College+(LTUC%E2%80%AD/@31.8979365,35.8710084,17z/data=!3m1!4b1!4m5!3m4!1s0x151ca7e4aee722d5:0x8693a9183825010b!8m2!3d31.897932!4d35.8688197"><img
+                    class="location" src="img/location.png" alt="location"></a>
+            <a class="adress-link"
+                href="https://www.google.jo/maps/place/%D9%83%D9%84%D9%8A%D8%A9+%D9%84%D9%88%D9%85%D9%8A%D9%86%D9%88%D8%B3+%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%B9%D9%8A%D8%A9+%D8%A7%D9%84%D8%AA%D9%82%D9%86%D9%8A%D8%A9+-+(Luminus+Technical+University+College+(LTUC%E2%80%AD/@31.8979365,35.8710084,17z/data=!3m1!4b1!4m5!3m4!1s0x151ca7e4aee722d5:0x8693a9183825010b!8m2!3d31.897932!4d35.8688197">
+                Amman-Airport Road</a>
+        </div>
     </footer>
 
 </body>
