@@ -2,15 +2,20 @@
 
 // <<< create form object >>>
 
-let formArray=[];
+let formArray = [];
 console.log(formArray);
-let dataArr=[];
+let dataArr = [];
 
-function Service(companyName, serviceName, price) {
+function Service(companyName, serviceName, price, contact, urlFiled, description) {
 
     this.companyName = companyName;
     this.serviceName = serviceName;
     this.price = price;
+    this.contact = contact;
+    this.urlFiled = urlFiled;
+    this.description = description;
+
+
     formArray.push(this);
     Service.allService.push(this);
 }
@@ -23,23 +28,34 @@ console.log(Service.allService);
 
 // add test
 // create list
+
+
 let theResults = document.getElementById('theResults');
-let theFormList = document.createElement('ul');
-theResults.appendChild(theFormList);
+// let theFormList = document.createElement('ul');
+// theResults.appendChild(theFormList);
 
-//the render function
+
+// for (let i = 0; i < formArray.length ; i++) {
+//     theFormList = "";
+//     renderService();
+//     //the render function
+// }
+
 function renderService() {
-
-    theFormList.textContent="";
+    theResults.textContent = "";
     for (let i = 0; i < Service.allService.length; i++) {
-             let list = document.createElement('li');
-        theFormList.appendChild(list);
-        list.textContent = `The company name is : ${Service.allService[i].companyName} and the service : is ${Service.allService[i].serviceName} and the price ( ${Service.allService[i].price} JD)`;
-    //Service.allService=[];    
+        var divigin = document.createElement('div');
+        theResults.appendChild(divigin);
+        divigin.textContent = `The company name  : ${Service.allService[i].companyName}\n  the service :  ${Service.allService[i].serviceName} the price ( ${Service.allService[i].price} JD \r the phone contact: ${Service.allService[i].contact}  \r the url for service : ${Service.allService[i].urlFiled}   brife description for service : ${Service.allService[i].description} )`;
+        //Service.allService=[];    
     }
+
+divigin.id ="divBox";
+document.getElementById('divBox').style.border = "5px" ;
     
-    
+    //\n
 }
+
 
 
 
@@ -55,27 +71,55 @@ serviceForm.addEventListener('submit', newService);
 //create new service
 function newService(event) {
     event.preventDefault();
-     let companyName = event.target.companyField.value;
-    let seerviceName = event.target.serviceField.value;
+    let companyName = event.target.companyField.value;
+    let serviceName = event.target.serviceField.value;
     let price = event.target.priceField.value;
-    new Service(companyName, seerviceName, price);
+    let phone = event.target.contact.value;
+    let link = event.target.urlField.value;
+    let description = event.target.serviceDescribtion.value;
+
+
+    new Service(companyName, serviceName, price, phone, link, description);
     renderService();
+
     updateStorage();
 }
-renderService();
+
+
+
+// serviceForm.addEventListener('load', function () {
+
+//     document.querySelector('input[type="file"]').addEventListener('change', function () {
+//         //check the user load img
+//         if (this.files && this.files[0]) {
+
+//             var img = document.querySelector('img');
+//             img.src = URL.createObjectURL(this.files[0]);
+
+//             img.onload = imgLoded;
+
+//         }
+//     });
+
+// });
+
+// function imgLoded(event) {
+//     alert(event);
+// }
+
+
 
 // function for update data
-
-function updateStorage(){
-    let arrayString=JSON.stringify(Service.allService);
-    localStorage.setItem('Service',arrayString);
+function updateStorage() {
+    let arrayString = JSON.stringify(Service.allService);
+    localStorage.setItem('Service', arrayString);
 }
 
-function getServicesdata(){
-    let data=localStorage.getItem('Service');
-    let servicetData=JSON.parse(data);
-    if(servicetData!==null){
-        Service.allService=servicetData;
+function getServicesdata() {
+    let data = localStorage.getItem('Service');
+    let servicetData = JSON.parse(data);
+    if (servicetData !== null) {
+        Service.allService = servicetData;
     }
     renderService();
 }
