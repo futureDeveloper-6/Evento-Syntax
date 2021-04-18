@@ -54,10 +54,11 @@ body{
 
   /*css for form*/
 
+  
   input[type=text] {
     width: 200px;
     box-sizing: border-box;
-    border: 6px solid #dfbb00;
+    border: 6px solid black;
     border-radius: 10px;
     font-size: 30px;
     background-color: white;
@@ -153,5 +154,8 @@ table tr{
   font-weight: bold;  
   background-color: #f7f7e8;
   margin-bottom:30px ;
-}
+  border-radius: 4px;
+  border: 2px solid black;
 
+
+}
