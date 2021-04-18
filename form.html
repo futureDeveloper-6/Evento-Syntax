@@ -17,15 +17,18 @@
 
 <body>
     <header>
-        <img src="img/logo.jpg" alt="logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="html/products.html">services</a></li>
-                <li><a href="form.html">Add</a></li>
-                <li><a href="aboutus.html">About us</a></li>
-            </ul>
-        </nav>
+        <div class="header">
+            <img src="img/logo.png" alt="logo">
+            <nav>
+                <ul>
+                    <li><a  href="index.html">HOME</a></li>
+                    <li><a  href="cart.html">SHOP</a></li>
+                    <li><a  class="active" href="form.html">ADD SERVICE</a></li>
+                    <li><a  href="aboutus.html">ABOUT US</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
     </header>
     <main>
@@ -92,29 +95,43 @@
             </fieldset>
         </form>
         <div id="theResults">
-            <div id="box"></div>
-            <ul></ul>
 
         </div>
 
     </main>
+    <div class="animation">
+        <img class="animation" src="img/ballons.png" alt="animation">
+    </div>
+
     <footer>
-        <h2>Evento-Syntax</h2>
+        <hr color="#31082F" width="95%">
+        <h2>Evento Syntax </h2>
         <div class="contact">
-            <p>Text us <img class="mail" src="img/mail-icon.png" alt="mail">: eventoSyntax@gmail.com</p>
-            <p>Tel <img class="tel" src="img/Tel.png" alt="Tel">: 0962111222333</p>
+            <a href="mailto:evento.syntax">Email Evento Syntax</a>
+            <p>Tel:0962111222333</p>
+
         </div>
+
         <div class="follow">
             <p>Follow us</p>
             <ul>
-                <li><a href=""><img class="icon" src="img/fb-icon.png" alt=""></a></li>
-                <li><a href=""><img class="icon" src="img/insta-icon.png" alt=""></a></li>
-                <li><a href=""><img class="icon" src="img/twit-icon.png" alt=""></a></li>
+                <li><a target="_blank" href="https://web.facebook.com/Evento-Syntax-103112688585013"><img
+                            class="icon facebook" src="img/facebook.png" alt=""></a></li>
+                <li><a target="_blank" href="https://twitter.com/EventoSyntax"><img class="icon twitter"
+                            src="img/twitter.png" alt=""></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/evento.syntax/"><img class="icon instagram"
+                            src="img/insta.png" alt=""></a></li>
             </ul>
         </div>
-
+        <div class="map">
+            <a target="_blank"
+                href="https://www.google.jo/maps/place/%D9%83%D9%84%D9%8A%D8%A9+%D9%84%D9%88%D9%85%D9%8A%D9%86%D9%88%D8%B3+%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%B9%D9%8A%D8%A9+%D8%A7%D9%84%D8%AA%D9%82%D9%86%D9%8A%D8%A9+-+(Luminus+Technical+University+College+(LTUC%E2%80%AD/@31.8979365,35.8710084,17z/data=!3m1!4b1!4m5!3m4!1s0x151ca7e4aee722d5:0x8693a9183825010b!8m2!3d31.897932!4d35.8688197"><img
+                    class="location" src="img/location.png" alt="location"></a>
+            <a class="adress-link"
+                href="https://www.google.jo/maps/place/%D9%83%D9%84%D9%8A%D8%A9+%D9%84%D9%88%D9%85%D9%8A%D9%86%D9%88%D8%B3+%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%B9%D9%8A%D8%A9+%D8%A7%D9%84%D8%AA%D9%82%D9%86%D9%8A%D8%A9+-+(Luminus+Technical+University+College+(LTUC%E2%80%AD/@31.8979365,35.8710084,17z/data=!3m1!4b1!4m5!3m4!1s0x151ca7e4aee722d5:0x8693a9183825010b!8m2!3d31.897932!4d35.8688197">
+                Amman-Airport Road</a>
+        </div>
     </footer>
-
     <script src="js/form.js"> </script>
 
 </body>
