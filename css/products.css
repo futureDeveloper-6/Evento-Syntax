@@ -60,211 +60,108 @@ header nav ul li a.active{
   border-radius: 6px;
 }
 
+        
+.container {
+  max-width: 1200px;
+  max-height: 1200px;
+  margin: auto;
 
 
-section{
+
+}
+.image {
+  margin: 5;
+ 
+  float: left;
+  width: 390px;
+
+}
+
+.image img {
   position: relative;
-  display: inline-block;
-  border: 3px chartreuse solid;
-  width: 30%;
-  height: 10%;
-  margin: 10px;
-    
+  width: 300px;
+  height: 150px;
+  padding-bottom: 30px;
+
+
+
 }
+a{
+  text-decoration: none;
 
-.image img{
-  display: inline;
-  width: 30px;
-  height: 30px;
 }
-
-/* section div a{
-  
-} */
-/* #lights .image img{
-  display: inline-block;
-}
-  .container, .products-container  {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 50px;
-    padding-bottom: 100px;
-
-} */
-
-/* .image{
-  display: inline-block;
-  margin-right: 20px;
-  margin-left: 20px;
-  position: relative;
-  overflow: hidden;
-  padding: 100px;
-
-} */
-
-
-
-/* img{
-    width: 200px;
-    height: 200px;
-    border-radius: 10px;
-    border-color: rgb(241, 239, 240);
-     
-} */
-
-
-  
-  span{
-    font-size: 30px;
-  }
-
- a{
-       text-decoration: none;
-  }
 
 .add-cart {
-    position: absolute;
-    width: 100%;
-    background-color: rgb(245, 245, 250);
-    transition: all 0.3s ease-in-out; 
-    opacity: 0;
-    cursor: pointer;
-    text-align: center;
-    color: darkred;
-    font-size: larger;
-    
+position: relative;
+width: 100%;
+background-color: rgb(168, 168, 223);
+transition: all 0.3s ease-in-out; 
+opacity: 0;
+cursor: pointer;
+text-align: center;
+color: darkred;
+font-size: larger;
+
+
+
 
 }
+
+ 
+
+
 
 .image:hover .cart1, .image:hover .cart2,.image:hover .cart3,.image:hover .cart4,.image:hover .cart5,
- .image:hover .cart6,.image:hover .cart7,.image:hover .cart8,.image:hover .cart9,.image:hover .cart10, 
- .image:hover .cart11, .image:hover .cart12, .image:hover .cart13, .image:hover .cart14, .image:hover .cart15,
- .image:hover .cart16, .image:hover .cart17, .image:hover .cart18, .image:hover .cart19, .image:hover .cart20,
- .image:hover .cart21, .image:hover .cart22, .image:hover .cart23, .image:hover .cart24, .image:hover .cart25,
- .image:hover .cart26, .image:hover .cart27, .image:hover .cart28, .image:hover .cart29, .image:hover .cart30,
- .image:hover .cart31, .image:hover .cart32, .image:hover .cart33, .image:hover .cart34, .image:hover .cart35,
- .image:hover .cart36, .image:hover .cart37, .image:hover .cart38, .image:hover .cart39, .image:hover .cart40,
- .image:hover .cart41, .image:hover .cart42, .image:hover .cart43, .image:hover .cart44, .image:hover .cart45,
- .image:hover .cart46, .image:hover .cart47, .image:hover .cart48, .image:hover .cart49, .image:hover .cart50,
- .image:hover .cart51, .image:hover .cart52, .image:hover .cart53, .image:hover .cart54 {
+.image:hover .cart6,.image:hover .cart7,.image:hover .cart8,.image:hover .cart9,.image:hover .cart10, 
+.image:hover .cart11, .image:hover .cart12, .image:hover .cart13, .image:hover .cart14, .image:hover .cart15,
+.image:hover .cart16, .image:hover .cart17, .image:hover .cart18, .image:hover .cart19, .image:hover .cart20,
+.image:hover .cart21, .image:hover .cart22, .image:hover .cart23, .image:hover .cart24, .image:hover .cart25,
+.image:hover .cart26, .image:hover .cart27, .image:hover .cart28, .image:hover .cart29, .image:hover .cart30,
+.image:hover .cart31, .image:hover .cart32, .image:hover .cart33, .image:hover .cart34, .image:hover .cart35,
+.image:hover .cart36, .image:hover .cart37, .image:hover .cart38, .image:hover .cart39, .image:hover .cart40,
+.image:hover .cart41, .image:hover .cart42, .image:hover .cart43, .image:hover .cart44, .image:hover .cart45,
+.image:hover .cart46, .image:hover .cart47, .image:hover .cart48, .image:hover .cart49, .image:hover .cart50,
+.image:hover .cart51, .image:hover .cart52, .image:hover .cart53, .image:hover .cart54 {
 
-    bottom: 50px;
-    opacity: 1;
-    padding: 10px;
-    text-decoration: none;
- }
+bottom: 39px;
+opacity: 1;
+padding-right: 10%;
+text-decoration: none;
 
-
-
-
- /* h3{
-     font-family: cursive;
-     font-size: larger;
-     margin-left: 20px;
-     margin-bottom: 20px;
-     font-weight: bolder;
- } */
+}
+   
+nav ul ul{
+  position:absolute;
  
- 
+  display: none;
 
-
-/* * ---------------------------------------cart page -----------------------------------------------------------*/ 
-
- .products-container { 
-
-max-width: 650px;
-justify-content: space-around;
-margin: 0 auto ;
-margin-top: 50px;
-flex-wrap: wrap;
-/* margin-left: 20%; */
-/* display: flex; */
-/* background-color:blueviolet; */
-/* display: inline-block; */
-
-} 
-.products-container ion-icon {
-  font-size: 25px;
-  color: blue;
-  margin-left: 10px;
-  margin-right: 10px;
-  cursor: pointer;
-
-}
-.product-header {
-width: 100%;
-max-width: 650px;
-display: flex;
-justify-content:flex-start ;
-border-bottom: 4px solid cadetblue;
-margin: 0 auto;
-/* margin-bottom: 10px ; */
-/* padding-left: 100px; */
-
-} 
-
-
- .product-title {
-width: 45%;
-/* padding-left: 10%; */
+}  
+nav ul li:hover ul{
+  display: block;
+  height: 20px;
+}                 
+   
+nav ul ul li{
+  width: 150px;
+  float: none;
+  height: 60px;
+  display: list-item;
+  background-color: rgb(50, 91, 97);
+  padding: 10px;
+  font-size: 16px;
+  color: blanchedalmond;
 
 }
 
-.price{
-  width: 15%;
-  align-items: center;
-  display: flex;
-  border-bottom: 1px solid cadetblue;
-}
 
-.total{
-  width: 10%;
-  align-items: center;
-  display: flex;
-  border-bottom: 1px solid cadetblue;
-}
 
-.quantity{
 
-  width: 30%;
-  align-items: center;
-  display: flex;
-  /* padding: 10px 0;  */
-   /* justify-content: space-around; */
-  border-bottom: 1px solid cadetblue;
-}
-
-.products{
-  width: 45%;
-  align-items: center;
-  display: flex;
-  padding: 10px 0;
-  justify-content: space-around;
-  border-bottom: 1px solid cadetblue;
-}
-.products img {
-  width: 75px;
-  vertical-align: baseline;
-}
-.product{
-  display: inline-block;
-}
-.product ion-icon{
-  cursor: pointer;
-}
-
-.basketTotalContainer {
-  display: flex;
-  justify-content: flex-end;
-  width:100%;
-  padding: 10px 0;
-}
-.basketTotalTitle {
-  width: 30%;
-}
-.basketTotal {
-  width: 10%;
-}
+/* h3{
+font-family: cursive;
+font-size: larger;
+margin-left: 20px;
+margin-bottom: 20px;
+font-weight: bolder;
+} */
 
 
