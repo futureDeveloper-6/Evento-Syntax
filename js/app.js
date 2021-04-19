@@ -68,7 +68,7 @@ function setItems(product) {
   let cartItems = localStorage.getItem('productsInCart');
   cartItems = JSON.parse(cartItems);
   // console.log(cartItems);
-  if (cartItems != null) {
+  if (cartItems !== null) {
     if (cartItems[product.name] == undefined) {
       cartItems = {
         ...cartItems,
@@ -91,12 +91,12 @@ function setItems(product) {
 function totalCost(product) {
   console.log('price :', product.price);
 
-  // let cartCost = localStorage.getItem('totalCost');
+   let cartCost = localStorage.getItem('totalCost');
 
-  if (cartCost != null) {
+  if (cartCost !== null) {
     cartCost = parseFloat(cartCost);
     localStorage.setItem('totalCost', cartCost + product.price);
-
+    console.log('cart' ,cartCost);
   }
   else {
     localStorage.setItem('totalCost', product.price);
@@ -122,10 +122,9 @@ function displayCart() {
       <div class ="product">
       <ion-icon name="close-outline"></ion-icon>
       <img src="./img/lights/${item.name}.jpg" alt="damaged picture from display">
-      <span>${item.name}</span>
       </div>
 
-      <div class ="price" >JD${item.price}</div>
+      <div class ="price" >JD ${item.price}</div>
 
       <div class ="quantity" >
       <ion-icon  class="decrease" name="caret-back-outline"></ion-icon>
@@ -140,7 +139,7 @@ function displayCart() {
 
 
     });
-        productContainer.innerHTML += `
+    productContainer.innerHTML += `
         <div class="basketTotalContainer">
         <h4 class="basketTotalTitle">
         Basket Total
@@ -153,6 +152,7 @@ function displayCart() {
         `;
 
   }
+  console.log(cartCost);
 }
 
 onLoadCartNumbers();
