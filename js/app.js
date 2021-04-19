@@ -35,7 +35,7 @@ for (let i = 0; i < carts.length; i++) {
 function productsInsideCart() {
   let productsInsideCartNum = localStorage.getItem('cartsNum');
 
-  if (productsInsideCartNum) {
+  if (productsInsideCartNum ) {
 
     document.querySelector('.cart span').textContent = productsInsideCartNum;
 
@@ -113,6 +113,8 @@ function displayCart() {
   cartItems = JSON.parse(cartItems);
   let productContainer = document.querySelector('.product-img');
 
+
+  
   if (cartItems && productContainer) {
 
     productContainer.innerHTML = '';
@@ -133,10 +135,9 @@ function displayCart() {
   
   
   })
-
-  }
+ 
 }
-
+}
 
 displayCart();
 productsInsideCart();
