@@ -14,7 +14,61 @@ let products = [
   { name: 'light7', price: 17.25, inCart: 0 },
   { name: 'light8', price: 16.80, inCart: 0 },
   { name: 'light9', price: 13.75, inCart: 0 },
-  { name: 'light10', price: 12.90, inCart: 0 }
+  { name: 'light10', price: 12.90, inCart: 0 },
+  
+  // for balloons
+  { name: 'balloon1', price: 12.90, inCart: 0 },
+  { name: 'balloon2', price: 12.90, inCart: 0 },
+  { name: 'balloon3', price: 12.90, inCart: 0 },
+  { name: 'balloon4', price: 12.90, inCart: 0 },
+  { name: 'balloon5', price: 12.90, inCart: 0 },
+  { name: 'balloon6', price: 12.90, inCart: 0 },
+  { name: 'balloon7', price: 12.90, inCart: 0 },
+  { name: 'balloon8', price: 12.90, inCart: 0 },
+  { name: 'balloon9', price: 12.90, inCart: 0 },
+  { name: 'balloon10', price: 12.90, inCart: 0 },
+  { name: 'balloon11', price: 12.90, inCart: 0 },
+  { name: 'balloon12', price: 12.90, inCart: 0 },
+  { name: 'balloon13', price: 12.90, inCart: 0 },
+  { name: 'balloon14', price: 12.90, inCart: 0 },
+  { name: 'balloon15', price: 12.90, inCart: 0 },
+  { name: 'balloon16', price: 12.90, inCart: 0 },
+
+  // for candels
+  { name: 'candel1', price: 12.90, inCart: 0 },
+  { name: 'candel2', price: 12.90, inCart: 0 },
+  { name: 'candel3', price: 12.90, inCart: 0 },
+  { name: 'candel4', price: 12.90, inCart: 0 },
+  { name: 'candel5', price: 12.90, inCart: 0 },
+  { name: 'candel6', price: 12.90, inCart: 0 },
+  { name: 'candel7', price: 12.90, inCart: 0 },
+  { name: 'candel8', price: 12.90, inCart: 0 },
+  { name: 'candel9', price: 12.90, inCart: 0 },
+  { name: 'candel10', price: 12.90, inCart: 0 },
+  { name: 'candel11', price: 12.90, inCart: 0 },
+
+  // for roses
+  { name: 'rose1', price: 12.90, inCart: 0 },
+  { name: 'rose2', price: 12.90, inCart: 0 },
+  { name: 'rose3', price: 12.90, inCart: 0 },
+  { name: 'rose4', price: 12.90, inCart: 0 },
+  { name: 'rose5', price: 12.90, inCart: 0 },
+  { name: 'rose6', price: 12.90, inCart: 0 },
+  { name: 'rose7', price: 12.90, inCart: 0 },
+  { name: 'rose8', price: 12.90, inCart: 0 },
+  { name: 'rose9', price: 12.90, inCart: 0 },
+  { name: 'rose10', price: 12.90, inCart: 0 },
+  { name: 'rose11', price: 12.90, inCart: 0 }, 
+  { name: 'rose12', price: 12.90, inCart: 0 }, 
+  { name: 'rose13', price: 12.90, inCart: 0 },
+  
+  // for tables
+  { name: 'table1', price: 12.90, inCart: 0 },
+  { name: 'table2', price: 12.90, inCart: 0 },
+  { name: 'table3', price: 12.90, inCart: 0 },
+  { name: 'table4', price: 12.90, inCart: 0 },
+  { name: 'table5', price: 12.90, inCart: 0 },
+  { name: 'table6', price: 12.90, inCart: 0 },
 
 ];
 
@@ -135,6 +189,8 @@ function displayCart() {
       <div class="total">
          JD ${item.inCart * item.price}
       <div>
+
+      
   
     `;
 
@@ -166,5 +222,6 @@ displayCart();
 
 
 
-
+{/* <img src="./img/balloon/${item.name}.jpg" alt="damaged picture from display">
+      <img src="./img/candel/${item.name}.jpg" alt="damaged picture from display"></img> */}
 

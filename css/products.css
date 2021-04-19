@@ -65,7 +65,16 @@ img{
 }
 
 .image:hover .cart1, .image:hover .cart2,.image:hover .cart3,.image:hover .cart4,.image:hover .cart5,
- .image:hover .cart6,.image:hover .cart7,.image:hover .cart8,.image:hover .cart9,.image:hover .cart10{
+ .image:hover .cart6,.image:hover .cart7,.image:hover .cart8,.image:hover .cart9,.image:hover .cart10, 
+ .image:hover .cart11, .image:hover .cart12, .image:hover .cart13, .image:hover .cart14, .image:hover .cart15,
+ .image:hover .cart16, .image:hover .cart17, .image:hover .cart18, .image:hover .cart19, .image:hover .cart20,
+ .image:hover .cart21, .image:hover .cart22, .image:hover .cart23, .image:hover .cart24, .image:hover .cart25,
+ .image:hover .cart26, .image:hover .cart27, .image:hover .cart28, .image:hover .cart29, .image:hover .cart30,
+ .image:hover .cart31, .image:hover .cart32, .image:hover .cart33, .image:hover .cart34, .image:hover .cart35,
+ .image:hover .cart36, .image:hover .cart37, .image:hover .cart38, .image:hover .cart39, .image:hover .cart40,
+ .image:hover .cart41, .image:hover .cart42, .image:hover .cart43, .image:hover .cart44, .image:hover .cart45,
+ .image:hover .cart46, .image:hover .cart47, .image:hover .cart48, .image:hover .cart49, .image:hover .cart50,
+ .image:hover .cart51, .image:hover .cart52, .image:hover .cart53, .image:hover .cart54 {
 
     bottom: 50px;
     opacity: 1;
