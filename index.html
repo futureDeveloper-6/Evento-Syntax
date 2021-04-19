@@ -1,76 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
     <header>
-        <img src="img/logo.jpg" alt="logo">
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">services</a></li>
-                <li><a href="form.html">Add</a></li>
-                <li><a href="aboutus.html">About us</a></li>
-            </ul>
-        </nav>
-
+        <div class="header">
+            <img src="img/logo.png" alt="logo">
+            <nav>
+                <ul>
+                    <li><a class="active"  href="index.html">HOME</a></li>
+                    <li><a href="cart.html">SHOP</a></li>
+                    <li><a href="form.html">ADD SERVICE</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-   
+
+
     <main>
+        <div class="paragraph">
+            <h3>Welcome to our website!</h3>
+            <p>
+                We are here to make your corporate event perfect. If you have an opening party, seminar, conference, or
+                a product launch event, here you will find a wide range of products and services needed, and of course
+                our great team planning.
+
+                Don't forget to use the menu above to move around the website, if you would like to show any service or
+                product that you provide please use ADD SERVICE.
+            </p>
+            <button>BOOK YOUR SERVICE NOW!</button>
+        </div>
         <div class="sliderShow">
             <div class="slides">
                 <input type="radio" name="r" id="r1" checked>
                 <input type="radio" name="r" id="r2">
                 <input type="radio" name="r" id="r3">
                 <input type="radio" name="r" id="r4">
-                
+
                 <div class="slide s1">
-                    <img src="img/event1.jpg" alt="event1">
+                    <img src="img/1.jpeg" alt="event1">
                 </div>
                 <div class="slide ">
-                    <img src="img/evaent2.jpg" alt="event2">
+                    <img src="img/2.jpeg" alt="event2">
                 </div>
                 <div class="slide">
-                    <img src="img/event3.jpg" alt="event3">
+                    <img src="img/3.jpg" alt="event3">
                 </div>
                 <div class="slide">
-                    <img src="img/event4.jpg" alt="event4">
+                    <img src="img/4.jpeg" alt="event4">
                 </div>
+            </div>
+            <div class="navigation-auto">
+                <div class="auto"></div>
+                <div class="auto"></div>
+                <div class="auto"></div>
+                <div class="auto"></div>
             </div>
             <div class="navigation">
                 <label for="r1" class="bar"></label>
                 <label for="r2" class="bar"></label>
-                <label for="r3" class="bar"></label> 
-                <label for="r4" class="bar"></label>               
+                <label for="r3" class="bar"></label>
+                <label for="r4" class="bar"></label>
             </div>
+        </div>
+
+
+        <!-- sliding automatically function -->
+        <script>
+            let counter = 1;
+            setInterval(function () {
+                document.getElementById('r' + counter).checked = true;
+                counter++;
+                if (counter > 4) {
+                    counter = 1;
+                }
+            }, 5000);
+        </script>
+        <!-- end of the function -->
+
+    </main>
+    <div class="animation">
+        <img class="animation" src="img/ballons.png" alt="animation">
+    </div>
+
+    <footer>
+        <hr color="#31082F" width="95%">
+        <h2>Evento Syntax </h2>
+        <div class="contact">
+            <a href="mailto:evento.syntax">Email Evento Syntax</a>
+            <p>Tel:0962111222333</p>
 
         </div>
-        <div class="animation">
-            <img class="animation" src="https://toppng.com/uploads/preview/party-balloon-vector-11549968794yu4w3jd8aq.png?fbclid=IwAR1TocK1AZdf2hTn3QnRAykekinBsuikvG3Giet6yN6KPIbPjLcBotvnihA" alt="animation">
-        </div>
-          
-    </main>
-    <footer>
-        <h2>Evento-Syntax</h2>
-        <div class="contact">
-            <p>Text us <img  class ="mail"src="img/mail-icon.png" alt="mail">: eventoSyntax@gmail.com</p>
-            <p>Tel <img  class ="tel" src="img/Tel.png" alt="Tel">: 0962111222333</p>
-        </div>
+
         <div class="follow">
             <p>Follow us</p>
             <ul>
-                <li><a href=""><img class ="icon" src="img/fb-icon.png" alt=""></a></li>
-                <li><a href=""><img  class ="icon" src="img/insta-icon.png" alt=""></a></li>
-                <li><a href=""><img class ="icon" src="img/twit-icon.png" alt=""></a></li>
+                <li><a target="_blank" href="https://web.facebook.com/Evento-Syntax-103112688585013"><img
+                            class="icon facebook" src="img/facebook.png" alt=""></a></li>
+                <li><a target="_blank" href="https://twitter.com/EventoSyntax"><img class="icon twitter"
+                            src="img/twitter.png" alt=""></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/evento.syntax/"><img class="icon instagram"
+                            src="img/insta.png" alt=""></a></li>
             </ul>
+        </div>
+        <div class="map">
+            <a target="_blank"
+                href="https://www.google.jo/maps/place/%D9%83%D9%84%D9%8A%D8%A9+%D9%84%D9%88%D9%85%D9%8A%D9%86%D9%88%D8%B3+%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%B9%D9%8A%D8%A9+%D8%A7%D9%84%D8%AA%D9%82%D9%86%D9%8A%D8%A9+-+(Luminus+Technical+University+College+(LTUC%E2%80%AD/@31.8979365,35.8710084,17z/data=!3m1!4b1!4m5!3m4!1s0x151ca7e4aee722d5:0x8693a9183825010b!8m2!3d31.897932!4d35.8688197"><img
+                    class="location" src="img/location.png" alt="location"></a>
+            <a class="adress-link"
+                href="https://www.google.jo/maps/place/%D9%83%D9%84%D9%8A%D8%A9+%D9%84%D9%88%D9%85%D9%8A%D9%86%D9%88%D8%B3+%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%B9%D9%8A%D8%A9+%D8%A7%D9%84%D8%AA%D9%82%D9%86%D9%8A%D8%A9+-+(Luminus+Technical+University+College+(LTUC%E2%80%AD/@31.8979365,35.8710084,17z/data=!3m1!4b1!4m5!3m4!1s0x151ca7e4aee722d5:0x8693a9183825010b!8m2!3d31.897932!4d35.8688197">
+                Amman-Airport Road</a>
         </div>
 
     </footer>
 </body>
+
 </html>

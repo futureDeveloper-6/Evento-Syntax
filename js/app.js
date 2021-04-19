@@ -3,7 +3,7 @@
 
 let carts = document.querySelectorAll('.add-cart');
 
-let productsArr = [
+let products = [
 
   { name: 'light1', price: 15.25, inCart: 0 },
   { name: 'light2', price: 17.55, inCart: 0 },
@@ -23,8 +23,8 @@ let productsArr = [
 for (let i = 0; i < carts.length; i++) {
 
   carts[i].addEventListener('click', () => {
-    cartsNum(productsArr[i]);
-    total(productsArr[i]);
+    cartNumbers(products[i]);
+    totalCost(products[i]);
 
   });
 
@@ -32,41 +32,42 @@ for (let i = 0; i < carts.length; i++) {
 
 
 // creat function to storage products number inside the cart:
-function productsInsideCart() {
-  let productsInsideCartNum = localStorage.getItem('cartsNum');
+function onLoadCartNumbers() {
+  let productNumbers = localStorage.getItem('cartNumbers');
 
-  if (productsInsideCartNum ) {
+  if (productNumbers) {
 
-    document.querySelector('.cart span').textContent = productsInsideCartNum;
+    document.querySelector('.cart span').textContent = productNumbers;
 
   }
 }
 
 
 // creat local storage function
-function cartsNum(product) {
+function cartNumbers(product) {
 
-  let productData = localStorage.getItem('cartsNum');
-  productData = parseInt(productData);
+  let productNumbers = localStorage.getItem('cartNumbers');
+  productNumbers = parseInt(productNumbers);
 
-  if (productData) {
-    localStorage.setItem('cartsNum', productData + 1);
-    document.querySelector('.cart span').textContent = productData + 1;
+  if (productNumbers) {
+    localStorage.setItem('cartNumbers', productNumbers + 1);
+    document.querySelector('.cart span').textContent = productNumbers + 1;
 
   } else {
-    localStorage.setItem('cartsNum', 1);
+    localStorage.setItem('cartNumbers', 1);
     document.querySelector('.cart span').textContent = 1;
   }
 
   setItems(product);
 }
 
-function setItems(product) {
 
+
+
+function setItems(product) {
   let cartItems = localStorage.getItem('productsInCart');
   cartItems = JSON.parse(cartItems);
-  console.log(cartItems);
-
+  // console.log(cartItems);
   if (cartItems != null) {
     if (cartItems[product.name] == undefined) {
       cartItems = {
@@ -76,24 +77,22 @@ function setItems(product) {
       }
     }
     cartItems[product.name].inCart += 1;
-
   }
   else {
 
     product.inCart = 1;
     cartItems = { [product.name]: product };
   }
-
-
   localStorage.setItem('productsInCart', JSON.stringify(cartItems));
 }
 
 
 //create fun to  sum total price 
-function total(product) {
+function totalCost(product) {
   console.log('price :', product.price);
 
-  let cartCost = localStorage.getItem('totalCost');
+  // let cartCost = localStorage.getItem('totalCost');
+
   if (cartCost != null) {
     cartCost = parseFloat(cartCost);
     localStorage.setItem('totalCost', cartCost + product.price);
@@ -108,10 +107,12 @@ function total(product) {
 // creat display function for cart page:
 
 function displayCart() {
+  let cartItems = localStorage.getItem("productsInCart");
 
-  let cartItems = localStorage.getItem('productsInCart');
   cartItems = JSON.parse(cartItems);
-  let productContainer = document.querySelector('.product-img');
+  let productContainer = document.querySelector('.products');
+  let cartCost = localStorage.getItem('totalCost');
+  // console.log(cartItems);
 
 
   
@@ -120,24 +121,52 @@ function displayCart() {
     productContainer.innerHTML = '';
     Object.values(cartItems).map(item => {
       productContainer.innerHTML += ` 
-      
-      <div class="cartt"
       <div class ="product">
-      <ion-icon class="icon" name="close-circle-outline"></ion-icon>
+      <ion-icon name="close-outline"></ion-icon>
       <img src="./img/lights/${item.name}.jpg" alt="damaged picture from display">
       <span>${item.name}</span>
-    </div>
-    <div class ="price" >${item.price}</div>
+      </div>
 
-    <div class ="quantity" >${item.inCart}</div>
-    </div>
-    ` 
+      <div class ="price" >JD${item.price}</div>
+
+      <div class ="quantity" >
+      <ion-icon  class="decrease" name="caret-back-outline"></ion-icon>
+      <span>${item.inCart}</span>
+      <ion-icon name="caret-forward-outline"></ion-icon>
+      </div>
+      <div class="total">
+         JD ${item.inCart * item.price}
+      <div>
   
-  
-  })
- 
-}
+    `;
+
+
+    });
+        productContainer.innerHTML += `
+        <div class="basketTotalContainer">
+        <h4 class="basketTotalTitle">
+        Basket Total
+        </h4>
+        <h4 class="basketTotal">
+        JD ${cartCost}
+        </h4>
+
+
+        `;
+
+  }
 }
 
+onLoadCartNumbers();
 displayCart();
-productsInsideCart();
+
+
+
+
+
+
+
+
+
+
+
