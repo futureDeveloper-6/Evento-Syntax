@@ -90,12 +90,12 @@ img{
 /* * ---------------------------------------cart page -----------------------------------------------------------*/ 
 
  .products-container { 
-
-max-width: 650px;
-justify-content: space-around;
+/* position: relative; */
+max-width: 1000px;
+/* justify-content: space-around; */
 margin: 0 auto ;
 margin-top: 50px;
-flex-wrap: wrap;
+/* flex-wrap: wrap; */
 /* margin-left: 20%; */
 /* display: flex; */
 /* background-color:blueviolet; */
@@ -105,8 +105,8 @@ flex-wrap: wrap;
 .products-container ion-icon {
   font-size: 25px;
   color: blue;
-  margin-left: 10px;
-  margin-right: 10px;
+  /* margin-left: 10px;
+  margin-right: 10px; */
   cursor: pointer;
 
 }
@@ -117,6 +117,7 @@ display: flex;
 justify-content:flex-start ;
 border-bottom: 4px solid cadetblue;
 margin: 0 auto;
+margin-right: 50px;
 /* margin-bottom: 10px ; */
 /* padding-left: 100px; */
 
@@ -131,19 +132,45 @@ width: 45%;
 
 .price{
   width: 15%;
+  position: relative;
+  right: 100px;
+  top: 70px;
   align-items: center;
-  display: flex;
+  /* display: flex; */
+  float: right;
   border-bottom: 1px solid cadetblue;
 }
 
 .total{
-  width: 10%;
+  width: 15%;
   align-items: center;
-  display: flex;
+  /* display: flex; */
   border-bottom: 1px solid cadetblue;
+  position: relative;
+left: 570px;
+bottom: 200px;
+}
+.totalHeader{
+  width: 15%;
+  align-items: center;
+  /* display: flex; */
+margin-left: 70px;
+  border-bottom: 1px solid cadetblue;
+
 }
 
-.quantity{
+.priceHeader{
+  width: 15%;
+  align-items: center;
+  /* display: flex; */
+/* float: right;
+ */
+ margin-right: 20px;
+  border-bottom: 1px solid cadetblue;
+
+
+}
+.quantityHeader{
 
   width: 30%;
   align-items: center;
@@ -152,25 +179,56 @@ width: 45%;
    /* justify-content: space-around; */
   border-bottom: 1px solid cadetblue;
 }
-
+/* 
 .products{
   width: 45%;
   align-items: center;
-  display: flex;
+display: flex; 
   padding: 10px 0;
   justify-content: space-around;
   border-bottom: 1px solid cadetblue;
-}
+} */
 .products img {
-  width: 75px;
-  vertical-align: baseline;
+  width: 200px;
+  margin-left: 20px;
+  margin-right: 20px;
+  /* vertical-align: baseline; */
+
+}
+.product ion-icon{
+
+margin-bottom: 90px;
+
 }
 .product{
-  display: inline-block;
+  /* display: inline-block; */
+  /* position: absolute; */
+  /* left: 10px;
+  top: 140px; */
+  margin-bottom: 50px;
+float: left;
+position: relative;
+right: 50px;
+
 }
 .product ion-icon{
   cursor: pointer;
 }
+
+.product .icon-inner{
+position: relative;
+right: 20px;;
+}
+
+.quantity {
+  /* display: flex; */
+  float: right;
+  position: relative;
+  top: 50px;
+    border-bottom: 1px solid cadetblue;
+
+}
+
 
 .basketTotalContainer {
   display: flex;
@@ -182,7 +240,7 @@ width: 45%;
   width: 30%;
 }
 .basketTotal {
-  width: 10%;
+  width: 15%;
 }
 
 
