@@ -7,87 +7,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/form.css">
 </head>
 
 <body>
     <header>
-        <img src="img/logo.jpg" alt="logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="html/products.html">services</a></li>
-                <li><a href="form.html">Add</a></li>
-                <li><a href="aboutus.html">About us</a></li>
-            </ul>
-        </nav>
+        <div class="header">
+            <img src="img/logo.png" alt="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="cart.html">SHOP</a></li>
+                    <li><a class="active" href="form.html">ADD SERVICE</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
     </header>
     <main>
         <form action="" id="serviceForm">
             <fieldset>
 
-                <label for="companyName">Company Name</label>
+                <label for="companyName" id="companyName">Company Name</label>
+
+                <br>
+                <br>
+                <input type="text" autocomplete="off" placeholder="Enter company name" id="companyField"
+                    name="companyField" class="inputForm">
                 <br>
                 <br>
 
-                <input type="text" autocomplete="off" placeholder="Enter the name" id="companyField"
-                    name="companyField">
-                <br>
-                <br>
-                <br>
 
                 <label for="serviceName">The Service</label>
                 <br>
                 <br>
 
                 <input type="text" autocomplete="off" placeholder="Enter the service name" id="serviceField"
-                    name="serviceField">
+                    name="serviceField" class="inputForm">
                 <br>
                 <br>
-                <br>
+
 
                 <label for="price">The price</label>
                 <br>
                 <br>
 
-                <input type="number" step="0.01" placeholder="Enter the price" id="priceField" name="priceField">
-                <br>
+                <input type="number" step="0.01" placeholder="Enter the price" id="priceField" name="priceField"
+                    class="inputForm">
                 <br>
                 <br>
 
 
-                <input type="submit" value="click here to add service">
+
+                <label for="contact">Your Contact</label>
+                <br>
+                <br>
+
+                <input type="text" placeholder="company contact " id="contact" name="contact" class="inputForm">
+                <br>
+                <br>
+
+
+                <label for="urlField"> Service URL</label>
+                <br>
+                <br>
+                <input type="url" placeholder="Enter Service URL" id="urlField" name="urlField" class="inputForm">
+
+                <!-- <label for="imgField">service image</label>
+                <br>
+                <br> -->
+                <!-- <input type="file" src="" id="imgField" name="imgField" height="200" width="100"> -->
+                <br>
+                <br>
+                <label for="serviceDescription">Description</label>
+                <br>
+                <br>
+                <textarea id="serviceDescribtion" name="serviceDescribtion" class="inputForm"
+                    placeholder="Description..."></textarea>
+                <br>
+                <br>
+
+
+                <input type="submit" value="submit" class="input">
             </fieldset>
         </form>
-        <div id="theResults">
-
-            <ul></ul>
-
-        </div>
+        <div id="theResults"></div>
 
     </main>
-    <footer>
-        <h2>Evento-Syntax</h2>
+
+
+    <!-- <div class="animation">
+        <img class="animation" src="img/ballons.png" alt="animation">
+    </div>
+     -->
+    
+
+
+     <footer>
+        <hr color="#31082F" width="95%">
+        <h2>Evento Syntax </h2>
         <div class="contact">
-            <p>Text us <img class="mail" src="img/mail-icon.png" alt="mail">: eventoSyntax@gmail.com</p>
-            <p>Tel <img class="tel" src="img/Tel.png" alt="Tel">: 0962111222333</p>
+            <a href="mailto:evento.syntax">Email Evento Syntax</a>
+            <p>Tel:0962111222333</p>
+
         </div>
+
         <div class="follow">
             <p>Follow us</p>
             <ul>
-                <li><a href=""><img class="icon" src="img/fb-icon.png" alt=""></a></li>
-                <li><a href=""><img class="icon" src="img/insta-icon.png" alt=""></a></li>
-                <li><a href=""><img class="icon" src="img/twit-icon.png" alt=""></a></li>
+                <li><a target="_blank" href="https://web.facebook.com/Evento-Syntax-103112688585013"><img
+                            class="icon facebook" src="img/facebook.png" alt=""></a></li>
+                <li><a target="_blank" href="https://twitter.com/EventoSyntax"><img class="icon twitter"
+                            src="img/twitter.png" alt=""></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/evento.syntax/"><img class="icon instagram"
+                            src="img/insta.png" alt=""></a></li>
             </ul>
         </div>
-
+       
+    
     </footer>
+
+    
 
     <script src="js/form.js"> </script>
 
