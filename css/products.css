@@ -95,6 +95,7 @@ max-width: 650px;
 justify-content: space-around;
 margin: 0 auto ;
 margin-top: 50px;
+
 flex-wrap: wrap;
 /* margin-left: 20%; */
 /* display: flex; */

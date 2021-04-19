@@ -24,28 +24,6 @@ Service.allService = [];
 console.log(Service.allService);
 
 
-// <<<< Render >>>>
-
-
-// add test
-// create table
-
-
-//the render function
-// create header array
-// let headerArray = ['Company Name', 'Service Name', 'Price', 'Contact', 'URl Filed', 'Description'];
-
-// function header() {
-//     let headingRow = document.createElement('tr');
-//     theFormTable.appendChild(headingRow);
-//     for (let i = 0; i < headerArray.length; i++) {
-//         let hElement = document.createElement('th');
-//         headingRow.appendChild(hElement);
-//         hElement.textContent = headerArray[i];
-        
-//     }
-// }
-
 
 let theResults = document.getElementById('theResults');
 

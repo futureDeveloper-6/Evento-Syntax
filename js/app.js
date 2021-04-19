@@ -114,6 +114,8 @@ function displayCart() {
   let cartCost = localStorage.getItem('totalCost');
   // console.log(cartItems);
 
+
+  
   if (cartItems && productContainer) {
 
     productContainer.innerHTML = '';
