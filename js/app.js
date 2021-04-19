@@ -175,7 +175,7 @@ function displayCart() {
       productContainer.innerHTML += ` 
       <div class ="product">
       <ion-icon name="close-outline"></ion-icon>
-      <img src="./img/lights/${item.name}.jpg" alt="damaged picture from display">
+      <img src="./img/${item.name}.jpg" alt="damaged picture from display">
       <span>${item.name}</span>
       </div>
 
