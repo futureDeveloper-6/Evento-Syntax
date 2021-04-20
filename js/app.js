@@ -183,7 +183,7 @@ function displayCart() {
     productContainer.innerHTML = '';
     Object.values(cartItems).map(item => {
       productContainer.innerHTML += `<div class ="product">
-      <img src="./img/lights/${item.name}.jpg" alt="damaged picture from display"></div>
+      <img src="./img/${item.name}.jpg" alt="damaged picture from display"></div>
     
       <div class ="price" > <span><i class="price-Cont"></i></span>
       <span class="price11">${item.price}</span></div>
