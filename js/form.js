@@ -29,7 +29,7 @@ function renderService() {
         let divBox = document.createElement('div');
         theResults.appendChild(divBox);
         divBox.id ="divBox";
-        divBox.innerHTML = `We are <p style="color:red; font-weight:bolder;">${Service.allService[i].companyName}</p> we will be glad if you share  ${Service.allService[i].serviceName} service to your great website, our service costs around ${Service.allService[i].price} JD.<br> kindly contact us through : ${Service.allService[i].contact}<br> you can check our services through this link : ${Service.allService[i].urlFiled}<br> and this is a brife description of our services : ${Service.allService[i].description} `;
+        divBox.innerHTML = `We are <p style="color:#c241bb ; font-weight:bolder;">${Service.allService[i].companyName}</p> we will be glad if you share  ${Service.allService[i].serviceName} service to your great website, our service costs around ${Service.allService[i].price} JD.<br> kindly contact us through : ${Service.allService[i].contact}<br> you can check our services through this link : ${Service.allService[i].urlFiled}<br> and this is a brife description of our services : ${Service.allService[i].description} `;
     }
    
 }
