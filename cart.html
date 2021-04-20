@@ -7,44 +7,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
     <ion-icon src="/path/to/external/file.svg"></ion-icon>
-    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/cart.css">
 </head>
 
 <body>
     <header>
-        <div class="overlay"></div>
-
-        <nav>
-            <h2>shop</h2>
-            <ul>
-                <li><a href="products.html">shop page</a></li>
-                <li class="cart">
-                    <a href="cart.html" id="basket">
-                        <ion-icon name="basket">Cart </ion-icon><span>0</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+        <!-- <div class="overlay"></div> -->
+        <div class="header">
+            <img src="img/logo.png" alt="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="products.html">SHOP</a></li>
+                    <li><a href="form.html">ADD SERVICE</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li class="cart">
+                        <a class="active" href="cart.html" id="basket">
+                            <ion-icon name="basket">Cart </ion-icon><span>0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <div class="products-container">
+    <main>
+        <div class="products-container">
 
-        <div class="product-header">
+            <div class="product-header">
 
-            <h5 class="product-title">PRODUCT </h5>
-            <h5 class="price">PRICE</h5>
-            <h5 class="quantity">QUANTITY</h5>
-            <h5 class="total">TOTAL</h5>
+                <h5 class="product-title">PRODUCT </h5>
+                <h5 class="priceHeader">PRICE</h5>
+                <h5 class="quantityHeader">QUANTITY</h5>
+                <h5 class="totalHeader">TOTAL</h5>
 
+            </div>
+
+
+            <div class="products">
+
+            </div>
         </div>
 
 
-        <div class="products">
-            
+
+        <!-- for increament and decreament from the cart page -->
+        <!-- <div class="quantity2">
+            <button class="btn minus-btn disabled" type="button">-</button>
+            <input type="text" id="quantity2" value="0">
+            <button class="btn plus-btn " type="button">+</button>
         </div>
+        </div> -->
+        <!--  to calculate the price when increment &decraement from cartpage -->
+        <!-- <p class="total-price2">
+            <span><i class="price-Cont"></i></span>
+            <span id="price">100</span>
+        </p> -->
+
+
+
+
+        <div class="popup" id="popup-1">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup()">&times;</div>
+                <p> Thanks for visiting our website
+                    <br>
+                    We hope you had a perfect service.
+                </p>
+            </div>
+        </div>
+
+        <button  class ="checkOut" onclick="togglePopup()">Check Out </button>
+
+    </main>
+    <div class="animation">
+        <img class="animation" src="img/ballons.png" alt="animation">
     </div>
 
 
+
+
+
+
+
+
+
+
+
+    <footer>
+        <hr color="#31082F" width="95%">
+        <h2>Evento Syntax </h2>
+        <div class="contact">
+            <a href="mailto:evento.syntax">Email Evento Syntax</a>
+            <p>Tel:0962111222333</p>
+
+        </div>
+
+        <div class="follow">
+            <p>Follow us</p>
+            <ul>
+                <li><a target="_blank" href="https://web.facebook.com/Evento-Syntax-103112688585013"><img
+                            class="icon facebook" src="img/facebook.png" alt=""></a></li>
+                <li><a target="_blank" href="https://twitter.com/EventoSyntax"><img class="icon twitter"
+                            src="img/twitter.png" alt=""></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/evento.syntax/"><img class="icon instagram"
+                            src="img/insta.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="map">
+            <a target="_blank"
+                href="https://www.google.jo/maps/place/%D9%83%D9%84%D9%8A%D8%A9+%D9%84%D9%88%D9%85%D9%8A%D9%86%D9%88%D8%B3+%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%B9%D9%8A%D8%A9+%D8%A7%D9%84%D8%AA%D9%82%D9%86%D9%8A%D8%A9+-+(Luminus+Technical+University+College+(LTUC%E2%80%AD/@31.8979365,35.8710084,17z/data=!3m1!4b1!4m5!3m4!1s0x151ca7e4aee722d5:0x8693a9183825010b!8m2!3d31.897932!4d35.8688197"><img
+                    class="location" src="img/location.png" alt="location"></a>
+            <a class="adress-link"
+                href="https://www.google.jo/maps/place/%D9%83%D9%84%D9%8A%D8%A9+%D9%84%D9%88%D9%85%D9%8A%D9%86%D9%88%D8%B3+%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%B9%D9%8A%D8%A9+%D8%A7%D9%84%D8%AA%D9%82%D9%86%D9%8A%D8%A9+-+(Luminus+Technical+University+College+(LTUC%E2%80%AD/@31.8979365,35.8710084,17z/data=!3m1!4b1!4m5!3m4!1s0x151ca7e4aee722d5:0x8693a9183825010b!8m2!3d31.897932!4d35.8688197">
+                Amman-Airport Road</a>
+        </div>
+    </footer>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="js/app.js"></script>
 </body>
