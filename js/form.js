@@ -3,9 +3,7 @@
 
 // <<< create form object >>>
 
-let formArray = [];
-console.log(formArray);
-let dataArr = [];
+
 
 function Service(companyName, serviceName, price, contact, urlFiled, description) {
 
@@ -16,35 +14,11 @@ function Service(companyName, serviceName, price, contact, urlFiled, description
     this.urlFiled = urlFiled;
     this.description = description;
 
-
-    formArray.push(this);
     Service.allService.push(this);
 }
 Service.allService = [];
 console.log(Service.allService);
 
-
-// <<<< Render >>>>
-
-
-// add test
-// create table
-
-
-//the render function
-// create header array
-// let headerArray = ['Company Name', 'Service Name', 'Price', 'Contact', 'URl Filed', 'Description'];
-
-// function header() {
-//     let headingRow = document.createElement('tr');
-//     theFormTable.appendChild(headingRow);
-//     for (let i = 0; i < headerArray.length; i++) {
-//         let hElement = document.createElement('th');
-//         headingRow.appendChild(hElement);
-//         hElement.textContent = headerArray[i];
-        
-//     }
-// }
 
 
 let theResults = document.getElementById('theResults');
@@ -55,20 +29,12 @@ function renderService() {
         let divBox = document.createElement('div');
         theResults.appendChild(divBox);
         divBox.id ="divBox";
-        divBox.textContent = `The company name  : ${Service.allService[i].companyName}\n  the service :  ${Service.allService[i].serviceName} the price ( ${Service.allService[i].price} JD \r the phone contact: ${Service.allService[i].contact}  \r the url for service : ${Service.allService[i].urlFiled}   brife description for service : ${Service.allService[i].description} )`;
+        divBox.innerHTML = `We are <p style="color:red; font-weight:bolder;">${Service.allService[i].companyName}</p> we will be glad if you share  ${Service.allService[i].serviceName} service to your great website, our service costs around ${Service.allService[i].price} JD.<br> kindly contact us through : ${Service.allService[i].contact}<br> you can check our services through this link : ${Service.allService[i].urlFiled}<br> and this is a brife description of our services : ${Service.allService[i].description} `;
     }
    
 }
 
 renderService();
-
-
-
-
-    
-
-
-
 
 
 
@@ -97,30 +63,6 @@ function newService(event) {
     updateStorage();
 }
 
-
-
-// serviceForm.addEventListener('load', function () {
-
-//     document.querySelector('input[type="file"]').addEventListener('change', function () {
-//         //check the user load img
-//         if (this.files && this.files[0]) {
-
-//             var img = document.querySelector('img');
-//             img.src = URL.createObjectURL(this.files[0]);
-
-//             img.onload = imgLoded;
-
-//         }
-//     });
-
-// });
-
-// function imgLoded(event) {
-//     alert(event);
-// }
-
-
-
 // function for update data
 function updateStorage() {
     let arrayString = JSON.stringify(Service.allService);
@@ -136,3 +78,9 @@ function getServicesdata() {
     renderService();
 }
 getServicesdata();
+
+
+function togglePopup() {
+    document.getElementById("popup-1").classList.toggle("active");
+  }
+``

@@ -86,3 +86,107 @@ img{
  
  
 
+<<<<<<< HEAD
+
+/* * ---------------------------------------cart page -----------------------------------------------------------*/ 
+
+ .products-container { 
+
+max-width: 650px;
+justify-content: space-around;
+margin: 0 auto ;
+margin-top: 50px;
+
+flex-wrap: wrap;
+/* margin-left: 20%; */
+/* display: flex; */
+/* background-color:blueviolet; */
+/* display: inline-block; */
+
+} 
+.products-container ion-icon {
+  font-size: 25px;
+  color: blue;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+
+}
+.product-header {
+width: 100%;
+max-width: 650px;
+display: flex;
+justify-content:flex-start ;
+border-bottom: 4px solid cadetblue;
+margin: 0 auto;
+/* margin-bottom: 10px ; */
+/* padding-left: 100px; */
+
+} 
+
+
+ .product-title {
+width: 45%;
+/* padding-left: 10%; */
+
+}
+
+.price{
+  width: 15%;
+  align-items: center;
+  display: flex;
+  border-bottom: 1px solid cadetblue;
+}
+
+.total{
+  width: 10%;
+  align-items: center;
+  display: flex;
+  border-bottom: 1px solid cadetblue;
+}
+
+.quantity{
+
+  width: 30%;
+  align-items: center;
+  display: flex;
+  /* padding: 10px 0;  */
+   /* justify-content: space-around; */
+  border-bottom: 1px solid cadetblue;
+}
+
+.products{
+  width: 45%;
+  align-items: center;
+  display: flex;
+  padding: 10px 0;
+  justify-content: space-around;
+  border-bottom: 1px solid cadetblue;
+}
+.products img {
+  width: 75px;
+  vertical-align: baseline;
+}
+.product{
+  display: inline-block;
+}
+.product ion-icon{
+  cursor: pointer;
+}
+
+.basketTotalContainer {
+  display: flex;
+  justify-content: flex-end;
+  width:100%;
+  padding: 10px 0;
+}
+.basketTotalTitle {
+  width: 30%;
+}
+.basketTotal {
+  width: 10%;
+}
+
+
+=======
+>>>>>>> b5b4656b4d4af3a83a4ca04492c1ef2a9c085905
