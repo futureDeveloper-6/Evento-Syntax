@@ -3,9 +3,7 @@
 
 // <<< create form object >>>
 
-let formArray = [];
-console.log(formArray);
-let dataArr = [];
+
 
 function Service(companyName, serviceName, price, contact, urlFiled, description) {
 
@@ -16,8 +14,6 @@ function Service(companyName, serviceName, price, contact, urlFiled, description
     this.urlFiled = urlFiled;
     this.description = description;
 
-
-    formArray.push(this);
     Service.allService.push(this);
 }
 Service.allService = [];
@@ -39,14 +35,6 @@ function renderService() {
 }
 
 renderService();
-
-
-
-
-    
-
-
-
 
 
 
@@ -74,30 +62,6 @@ function newService(event) {
 
     updateStorage();
 }
-
-
-
-// serviceForm.addEventListener('load', function () {
-
-//     document.querySelector('input[type="file"]').addEventListener('change', function () {
-//         //check the user load img
-//         if (this.files && this.files[0]) {
-
-//             var img = document.querySelector('img');
-//             img.src = URL.createObjectURL(this.files[0]);
-
-//             img.onload = imgLoded;
-
-//         }
-//     });
-
-// });
-
-// function imgLoded(event) {
-//     alert(event);
-// }
-
-
 
 // function for update data
 function updateStorage() {
