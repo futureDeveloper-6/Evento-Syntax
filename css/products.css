@@ -49,11 +49,11 @@ header nav ul li a{
   font-size: 24px;  
   font-weight: bolder;
 }
-header nav ul li a:hover{
+ /* header nav ul li a:hover{
   background: rgba(0, 0, 0, 0.1) ;
   border-radius: 6px;
 
-}
+}  */
 header nav ul li a.active{
   background: rgba(209, 180, 17, 0.918) ;
   color:#681864;
@@ -87,7 +87,7 @@ header nav ul li a.active{
 }
 
 .box{
-  background: #ff6666;
+  background: #c241bb;
   text-align: center;
   border-radius: 25px;
 
@@ -97,41 +97,62 @@ header nav ul li a.active{
 
 .box1{
   grid-column: 1/4;
-  padding-top: 10px; 
+  padding-top: 20px; 
   font-size:30px;
   text-align: center;
   font-family: 'Original Surfer', cursive;
-  
+  width: 130px;
+  height: 70px;
 }
 .box17{
   grid-column: 1/4;
-  padding-top: 10px; 
+  padding-top: 20px; 
   font-size:30px;
   text-align: center;
   font-family: 'Original Surfer', cursive;
+  width: 130px;
+  height: 70px;
+  margin-top: 60px;
+  margin-bottom: 35px;
+ 
 }
 .box33{
   grid-column: 1/4;
-  padding-top: 10px; 
+  padding-top: 20px; 
   font-size:30px;
   text-align: center;
   font-family: 'Original Surfer', cursive;
+  width: 130px;
+  height: 70px;
+  margin-top: 60px;
+  margin-bottom: 35px;
 }
+
 
 .box49{
   grid-column: 1/4;
-  padding-top: 10px; 
+  padding-top: 20px; 
   font-size:30px;
   text-align: center;
   font-family: 'Original Surfer', cursive;
+  margin-top: 60px;
+  margin-bottom: 35px;
+  width: 130px;
+  height: 70px;
+ 
 }
+
 
 .box65{
   grid-column: 1/4;
-  padding-top: 10px; 
+  padding-top: 20px; 
   font-size:30px;
   text-align: center;
   font-family: 'Original Surfer', cursive;
+  margin-top: 60px;
+  margin-bottom: 35px;
+  width: 130px;
+  height: 70px;
 }
 
 
@@ -203,130 +224,141 @@ header nav ul li a.active{
 
 }
 
-
-
-
-
-
-        
-/* .container {
-  max-width: 1200px;
-  max-height: 1200px;
-  margin: auto;
-}
-
-.image {
-  margin-bottom: 25px;
- 
-  float: right;
-  width: 390px;
-
-}
-
-.image img {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  border: solid;
-  flex-direction: column;
-  border-radius: 20px;  
-
-
-
-}
-a{
-  text-decoration: none;
-
-}
-
-.add-cart {
-position: relative;
-background-color: rgb(168, 168, 223);
-transition: all 0.3s ease-in-out; 
-opacity: 0;
-cursor: pointer;
-text-align: center;
-color: darkred;
-font-size: larger;
-width: 300px;
-height: 25px;
-}
-
-
-.image:hover .cart1, .image:hover .cart2, .image:hover .cart3, .image:hover .cart4, .image:hover .cart5,
-.image:hover .cart6, .image:hover .cart7, .image:hover .cart8, .image:hover .cart9, .image:hover .cart10, 
-.image:hover .cart11, .image:hover .cart12, .image:hover .cart13, .image:hover .cart14, .image:hover .cart15,
-.image:hover .cart16, .image:hover .cart17, .image:hover .cart18, .image:hover .cart19, .image:hover .cart20,
-.image:hover .cart21, .image:hover .cart22, .image:hover .cart23, .image:hover .cart24, .image:hover .cart25,
-.image:hover .cart26, .image:hover .cart27, .image:hover .cart28, .image:hover .cart29, .image:hover .cart30,
-.image:hover .cart31, .image:hover .cart32, .image:hover .cart33, .image:hover .cart34, .image:hover .cart35,
-.image:hover .cart36, .image:hover .cart37, .image:hover .cart38, .image:hover .cart39, .image:hover .cart40,
-.image:hover .cart41, .image:hover .cart42, .image:hover .cart43, .image:hover .cart44, .image:hover .cart45,
-.image:hover .cart46, .image:hover .cart47, .image:hover .cart48, .image:hover .cart49, .image:hover .cart50,
-.image:hover .cart51, .image:hover .cart52, .image:hover .cart53, .image:hover .cart54, .image:hover .cart55,
-.image:hover .cart56, .image:hover .cart57, .image:hover .cart58, .image:hover .cart59, .image:hover .cart60,
-.image:hover .cart61, .image:hover .cart62, .image:hover .cart63, .image:hover .cart64, .image:hover .cart65,
-.image:hover .cart66 {
-
-bottom:58px;
-padding-left: 100px;
-padding-right: 130px;
-opacity: 1;
-padding: 10%;
-text-decoration: none;
-}
-
-h3{
-  font-family:'Original Surfer', cursive;
-  text-align: center;
-  padding-right: 80px;
-  padding-top: 7px;
-}
-   
-nav ul ul{
-  position:absolute;
- 
+nav ul ul{    
+  position:absolute;    
+  top: 101px;    
   display: none;
-
-}  
-nav ul li:hover ul{
-  display: block;
-  height: 20px;
-}                 
-   
-nav ul ul li{
-  width: 150px;
-  float: none;
-  height: 60px;
-  display: list-item;
-  background-color: rgb(50, 91, 97);
-  padding: 10px;
-  font-size: 16px;
-  color: blanchedalmond;
-
 }
-
-.title{
-  font-size:30px;
-  text-align: center;
-  font-family: 'Original Surfer', cursive;
-  margin-top: 25px;
-
-}
- */
-
-
-
-/* h3{
-font-family: cursive;
-font-size: larger;
-margin-left: 20px;
-margin-bottom: 20px;
-font-weight: bolder;
-} */
-
-
-/* .label{
+nav ul li:hover ul{    
+ display: block;
  
-  color: blue;
-} */
+}      
+
+nav ul .subUl li a{    
+  width: 122px;  
+  height:80px;  
+  float: none;    
+  display: list-item;  
+  text-align: center;
+   background-color:plum ;    
+   font-size: 20px;    
+   color: blanchedalmond ;
+   vertical-align: middle;
+   line-height: 70px;
+}
+
+.lable{
+  background-color:plum ;    
+  color: blanchedalmond ;
+
+
+}
+.animation { 
+  width: 94%;
+  left:3%;
+  margin-top: 140px;
+} 
+
+ 
+footer{
+  margin: 10px;
+  height: 250px;
+  width: 100%;
+  position: absolute;
+  top: 1000px;
+  margin-top: 580%;
+
+}
+footer h2{
+  line-height: 80px;
+  text-align: center;
+  font-size: 50px;
+  color:#31082F;
+  font-weight: bolder;
+}
+.tel{
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+}
+.icon{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  background: white;
+  padding: 6px;
+
+}
+.facebook:hover{ 
+  background: #3B5999;
+}
+.twitter:hover{
+  background: #46C1F6;
+}
+.instagram:hover{
+  background: #e1306c;
+}
+footer ul li {
+  display: inline-block;
+  padding: 10px;
+}
+.follow{
+   text-align: center;
+   margin-top: 15px;
+   font-weight: bolder;
+
+}
+
+.contact{
+  line-height: 40px;
+  text-align: center;
+  font-weight: bolder;
+}
+footer p{
+  color:#31082F;
+  font-size: 20px; 
+  font-weight: bolder;
+}
+
+
+.location{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  background: white;
+  top: 262px;
+  right: 853px;
+}
+.location:hover{
+  background:rgba(209, 180, 17, 0.918);
+}
+.map {
+  text-align: center;
+  font-size: 20px;
+}
+.adress-link{
+  text-decoration: none;
+  color:#31082F;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.adress-link:hover{
+  color:rgba(209, 180, 17, 0.918);
+  font-weight: bolder;
+}
+.contact a{
+  text-decoration: none;
+  color:#31082F;
+  font-size: 20px;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.contact a:hover{
+  color:rgba(209, 180, 17, 0.918);
+  font-weight: bolder;
+
+}
