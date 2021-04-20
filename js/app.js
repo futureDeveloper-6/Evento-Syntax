@@ -150,6 +150,7 @@ function setItems(product) {
 
 
 //create fun to  sum total price 
+let cartCost = localStorage.getItem('totalCost');
 function totalCost(product) {
   console.log('price :', product.price);
 
@@ -167,13 +168,14 @@ function totalCost(product) {
 }
 
 // creat display function for cart page:
-
+let valueCount=0;
+valueCount=parseInt(valueCount);
 function displayCart() {
   let cartItems = localStorage.getItem("productsInCart");
 
   cartItems = JSON.parse(cartItems);
   let productContainer = document.querySelector('.products');
-  let cartCost = localStorage.getItem('totalCost');
+  
   // console.log(cartItems);
 
 
@@ -182,27 +184,31 @@ function displayCart() {
 
     productContainer.innerHTML = '';
     Object.values(cartItems).map(item => {
-      productContainer.innerHTML += `<div class ="product">
-      <img src="./img/${item.name}.jpg" alt="damaged picture from display"></div>
+      productContainer.innerHTML += `<div class ="box box4">
+      <img src="./img/${item.name}.jpg" alt="damaged picture from display">
+      </div>
     
-      <div class ="price" > <span><i class="price-Cont"></i></span>
+      <div class ="box box5" > <span><i class="price-Cont"></i></span>
       <span class="price11">${item.price}</span></div>
 
-    <div class="quantity2">
+    <div class="box box6">
     <button class="btn minus-btn disabled" type="button">-</button>
     <input type="text" class="quantityplus" value="${item.inCart}">
     <button class="btn plus-btn " type="button">+</button>
     </div>
+    
     `;
 
 
-    });
-    productContainer.innerHTML += `<div class="basketTotalContainer">
-    <h4 class="basketTotalTitle">Basket Total</h4>
+    
+     productContainer.innerHTML += `<div class="basketTotalContainer">
+     <h4 class="basketTotalTitle">Basket Total</h4>
     <h4 class="basketTotal">JD ${cartCost}</h4></div>`;
     
-  }
+  
   console.log(cartCost);
+});
+}
 }
 
 
@@ -217,7 +223,7 @@ displayCart();
 //setting default attribute to disabled of minus btn
 document.querySelector(".minus-btn").setAttribute("disables","disables");
 //taking value to increament decreament input value 
-let valueCount=0;
+
 let val=0;
 //taking price value in variable
 let price = document.querySelector(".price11").innerText;
@@ -246,6 +252,8 @@ for (let i = 0; i < plus.length; i++) {
      console.log(valueCount2[i])
      //input value increament by 1
      val++;
+     cartCost+=cartCost;
+
      //setting increament input value
      valueCount2[i].value= val;
      if (valueCount2 >0 ){
@@ -253,7 +261,11 @@ for (let i = 0; i < plus.length; i++) {
        document.querySelector(".minus-btn").classList.remove("disabled");
       }
       //calling price function
-      priceTotal(val,i);
+       priceTotal(val,i);
+       console.log('price total', priceTotal(val,i));
+       
+      // valueCount+=valueCount;
+      console.log('plus',valueCount);
     })
   }
 
@@ -278,7 +290,9 @@ for (let i = 0; i < plus.length; i++) {
 
     }
       //calling price function
-      priceTotal(val,i);
+      valueCount= priceTotal(val,i);
+      valueCount-=valueCount;
+      console.log('minuse',valueCount);
   })
   }
   
