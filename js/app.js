@@ -126,8 +126,6 @@ function cartNumbers(product) {
 }
 
 
-
-
 function setItems(product) {
   let cartItems = localStorage.getItem('productsInCart');
   cartItems = JSON.parse(cartItems);
@@ -155,11 +153,7 @@ function setItems(product) {
 function totalCost(product) {
   console.log('price :', product.price);
 
-<<<<<<< HEAD
-   let cartCost = localStorage.getItem('totalCost');
-=======
   let cartCost = localStorage.getItem('totalCost');
->>>>>>> 9069cef7b8ff70e2ee25f0fa91d2ef045e384a8f
 
   if (cartCost !== null) {
     cartCost = parseFloat(cartCost);
@@ -188,28 +182,6 @@ function displayCart() {
 
     productContainer.innerHTML = '';
     Object.values(cartItems).map(item => {
-<<<<<<< HEAD
-      productContainer.innerHTML += ` 
-      <div class ="product">
-      <ion-icon name="close-outline"></ion-icon>
-      <img src="./img/${item.name}.jpg" alt="damaged picture from display">
-      <span>${item.name}</span>
-      </div>
-
-      <div class ="price" >JD${item.price}</div>
-
-      <div class ="quantity" >
-      <ion-icon  class="decrease" name="caret-back-outline"></ion-icon>
-      <span>${item.inCart}</span>
-      <ion-icon name="caret-forward-outline"></ion-icon>
-      </div>
-      <div class="total">
-         JD ${item.inCart * item.price}
-      <div>
-
-      
-  
-=======
       productContainer.innerHTML += `<div class ="product">
       <img src="./img/lights/${item.name}.jpg" alt="damaged picture from display"></div>
     
@@ -221,9 +193,7 @@ function displayCart() {
     <input type="text" class="quantityplus" value="${item.inCart}">
     <button class="btn plus-btn " type="button">+</button>
     </div>
->>>>>>> 9069cef7b8ff70e2ee25f0fa91d2ef045e384a8f
     `;
-    // <div class="total"><span>JD ${item.inCart * item.price}</span></div>
 
 
     });
@@ -242,17 +212,6 @@ onLoadCartNumbers();
 displayCart();
 
 //  for increament and decreament from the cart page 
-{/* <div class ="quantity" >
-    <ion-icon  class="decrease" name="caret-back-outline"></ion-icon>
-    <span>${item.inCart}</span>
-    <ion-icon class="increase" name="caret-forward-outline"></ion-icon>
-    </div> */}
-  // to calculate the price when increment &decraement from cartpage 
-
-
-
-
-
 
 
 //setting default attribute to disabled of minus btn
@@ -272,7 +231,6 @@ let price = document.querySelector(".price11").innerText;
       prices[index].innerText=total;
        
      }
-    //  ).innerText= total
      console.log(prices)
  }
 //plus btn 
@@ -324,35 +282,6 @@ for (let i = 0; i < plus.length; i++) {
   })
   }
   
-
-// console.log(valueCount);
-//minus btn 
-// document.querySelector(".minus-btn").addEventListener('click',function () {
-  // getting value of input
-  // valueCount=document.getElementById("quantity").value;
-  //input value increament by 1
-  // valueCount--;
-  //setting increament input value
-  // document.getElementById("quantity").value = valueCount;
-  // if (valueCount == 0 ){
-    // document.querySelector(".minus-btn").setAttribute("disabled","disabled");
-  // }
-// calling price function
-  // priceTotal() ;
-// })
-
-
-
-
-
-
-
-
-<<<<<<< HEAD
-{/* <img src="./img/balloon/${item.name}.jpg" alt="damaged picture from display">
-      <img src="./img/candel/${item.name}.jpg" alt="damaged picture from display"></img> */}
-=======
-
 // add checkout button
 
 function togglePopup() {
@@ -364,5 +293,4 @@ function togglePopup() {
 
 
 
->>>>>>> 9069cef7b8ff70e2ee25f0fa91d2ef045e384a8f
 
