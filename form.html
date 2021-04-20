@@ -93,9 +93,21 @@
                     placeholder="Description..."></textarea>
                 <br>
                 <br>
+                <div class="popup" id="popup-1">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <div class="close-btn" onclick="togglePopup()">&times;</div>
+                        <p> Thanks for contact us.
+                             <br>
+                             We will contact back within 5-7 working days.
+                         </p>
+                    </div>
+                </div>
+        
+                <button onclick="togglePopup()">Submit</button>
 
 
-                <input type="submit" value="submit" class="input">
+                <!-- <input type="submit" value="submit" class="input"> -->
             </fieldset>
         </form>
         <div id="theResults"></div>
