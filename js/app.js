@@ -13,7 +13,71 @@ let products = [
   { name: 'light7', price: 17.25, inCart: 0 },
   { name: 'light8', price: 16.80, inCart: 0 },
   { name: 'light9', price: 13.75, inCart: 0 },
-  { name: 'light10', price: 12.90, inCart: 0 }
+  { name: 'light10', price: 12.90, inCart: 0 },
+  { name: 'light11', price: 12.90, inCart: 0 },
+  { name: 'light12', price: 12.90, inCart: 0 },
+  { name: 'light13', price: 12.90, inCart: 0 },
+  { name: 'light14', price: 12.90, inCart: 0 },
+  { name: 'light15', price: 12.90, inCart: 0 },
+  
+  // for balloons
+  { name: 'balloon1', price: 12.90, inCart: 0 },
+  { name: 'balloon2', price: 12.90, inCart: 0 },
+  { name: 'balloon3', price: 12.90, inCart: 0 },
+  { name: 'balloon4', price: 12.90, inCart: 0 },
+  { name: 'balloon5', price: 12.90, inCart: 0 },
+  { name: 'balloon6', price: 12.90, inCart: 0 },
+  { name: 'balloon7', price: 12.90, inCart: 0 },
+  { name: 'balloon8', price: 12.90, inCart: 0 },
+  { name: 'balloon9', price: 12.90, inCart: 0 },
+  { name: 'balloon10', price: 12.90, inCart: 0 },
+  { name: 'balloon11', price: 12.90, inCart: 0 },
+  { name: 'balloon12', price: 12.90, inCart: 0 },
+  { name: 'balloon13', price: 12.90, inCart: 0 },
+  { name: 'balloon14', price: 12.90, inCart: 0 },
+  { name: 'balloon15', price: 12.90, inCart: 0 },
+
+  // for candels
+  { name: 'candel1', price: 12.90, inCart: 0 },
+  { name: 'candel2', price: 12.90, inCart: 0 },
+  { name: 'candel3', price: 12.90, inCart: 0 },
+  { name: 'candel4', price: 12.90, inCart: 0 },
+  { name: 'candel5', price: 12.90, inCart: 0 },
+  { name: 'candel6', price: 12.90, inCart: 0 },
+  { name: 'candel7', price: 12.90, inCart: 0 },
+  { name: 'candel8', price: 12.90, inCart: 0 },
+  { name: 'candel9', price: 12.90, inCart: 0 },
+  { name: 'candel10', price: 12.90, inCart: 0 },
+  { name: 'candel11', price: 12.90, inCart: 0 },
+  { name: 'candel12', price: 12.90, inCart: 0 },
+  { name: 'candel13', price: 12.90, inCart: 0 },
+  { name: 'candel14', price: 12.90, inCart: 0 },
+  { name: 'candel15', price: 12.90, inCart: 0 },
+
+  // for roses
+  { name: 'rose1', price: 12.90, inCart: 0 },
+  { name: 'rose2', price: 12.90, inCart: 0 },
+  { name: 'rose3', price: 12.90, inCart: 0 },
+  { name: 'rose4', price: 12.90, inCart: 0 },
+  { name: 'rose5', price: 12.90, inCart: 0 },
+  { name: 'rose6', price: 12.90, inCart: 0 },
+  { name: 'rose7', price: 12.90, inCart: 0 },
+  { name: 'rose8', price: 12.90, inCart: 0 },
+  { name: 'rose9', price: 12.90, inCart: 0 },
+  { name: 'rose10', price: 12.90, inCart: 0 },
+  { name: 'rose11', price: 12.90, inCart: 0 }, 
+  { name: 'rose12', price: 12.90, inCart: 0 }, 
+  { name: 'rose13', price: 12.90, inCart: 0 },
+  { name: 'rose14', price: 12.90, inCart: 0 },
+  { name: 'rose15', price: 12.90, inCart: 0 },
+  
+  // for tables
+  { name: 'table1', price: 12.90, inCart: 0 },
+  { name: 'table2', price: 12.90, inCart: 0 },
+  { name: 'table3', price: 12.90, inCart: 0 },
+  { name: 'table4', price: 12.90, inCart: 0 },
+  { name: 'table5', price: 12.90, inCart: 0 },
+  { name: 'table6', price: 12.90, inCart: 0 },
 
 ];
 
@@ -60,8 +124,6 @@ function cartNumbers(product) {
 
   setItems(product);
 }
-
-
 
 
 function setItems(product) {
@@ -121,7 +183,7 @@ function displayCart() {
     productContainer.innerHTML = '';
     Object.values(cartItems).map(item => {
       productContainer.innerHTML += `<div class ="product">
-      <img src="./img/lights/${item.name}.jpg" alt="damaged picture from display"></div>
+      <img src="./img/${item.name}.jpg" alt="damaged picture from display"></div>
     
       <div class ="price" > <span><i class="price-Cont"></i></span>
       <span class="price11">${item.price}</span></div>
@@ -132,7 +194,6 @@ function displayCart() {
     <button class="btn plus-btn " type="button">+</button>
     </div>
     `;
-    // <div class="total"><span>JD ${item.inCart * item.price}</span></div>
 
 
     });
@@ -151,17 +212,6 @@ onLoadCartNumbers();
 displayCart();
 
 //  for increament and decreament from the cart page 
-{/* <div class ="quantity" >
-    <ion-icon  class="decrease" name="caret-back-outline"></ion-icon>
-    <span>${item.inCart}</span>
-    <ion-icon class="increase" name="caret-forward-outline"></ion-icon>
-    </div> */}
-  // to calculate the price when increment &decraement from cartpage 
-
-
-
-
-
 
 
 //setting default attribute to disabled of minus btn
@@ -181,7 +231,6 @@ let price = document.querySelector(".price11").innerText;
       prices[index].innerText=total;
        
      }
-    //  ).innerText= total
      console.log(prices)
  }
 //plus btn 
@@ -233,31 +282,6 @@ for (let i = 0; i < plus.length; i++) {
   })
   }
   
-
-// console.log(valueCount);
-//minus btn 
-// document.querySelector(".minus-btn").addEventListener('click',function () {
-  // getting value of input
-  // valueCount=document.getElementById("quantity").value;
-  //input value increament by 1
-  // valueCount--;
-  //setting increament input value
-  // document.getElementById("quantity").value = valueCount;
-  // if (valueCount == 0 ){
-    // document.querySelector(".minus-btn").setAttribute("disabled","disabled");
-  // }
-// calling price function
-  // priceTotal() ;
-// })
-
-
-
-
-
-
-
-
-
 // add checkout button
 
 function togglePopup() {
