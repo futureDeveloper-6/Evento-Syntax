@@ -63,20 +63,34 @@ header nav ul li a.active{
 
 /* css for images */
 
+ #list{
+  float: left;
+  margin-top: 0px;
+  
+}
+ #list li{
+  display: list-item;
+  padding:5px;
+ 
+}
+
 .all-images{
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  grid-auto-rows: minmax(55px,auto);
+  grid-auto-rows: minmax(100px,auto);
   grid-gap: 30px 80px;
   margin-top: 50px;
   margin-left: 25px;
   justify-items: center;
   
+  
 }
 
 .box{
-  background: cyan;
+  background: #ff6666;
   text-align: center;
+  border-radius: 25px;
+
 }
 
 /* ----title---- */
@@ -87,8 +101,32 @@ header nav ul li a.active{
   font-size:30px;
   text-align: center;
   font-family: 'Original Surfer', cursive;
+  
 }
 .box17{
+  grid-column: 1/4;
+  padding-top: 10px; 
+  font-size:30px;
+  text-align: center;
+  font-family: 'Original Surfer', cursive;
+}
+.box33{
+  grid-column: 1/4;
+  padding-top: 10px; 
+  font-size:30px;
+  text-align: center;
+  font-family: 'Original Surfer', cursive;
+}
+
+.box49{
+  grid-column: 1/4;
+  padding-top: 10px; 
+  font-size:30px;
+  text-align: center;
+  font-family: 'Original Surfer', cursive;
+}
+
+.box65{
   grid-column: 1/4;
   padding-top: 10px; 
   font-size:30px;
@@ -100,11 +138,17 @@ header nav ul li a.active{
 /* ----image size--- */
 
 .box2 img, .box3 img, .box4 img, .box5 img, .box6 img, .box7 img, .box8 img, .box9 img, .box10 img
-, .box11 img, .box12 img, .box13 img, .box14 img, .box15 img, .box16 img, .box18 img {
+, .box11 img, .box12 img, .box13 img, .box14 img, .box15 img, .box16 img, .box18 img, .box19 img, .box20 img
+, .box21 img, .box22 img, .box23 img, .box24 img, .box25 img, .box26 img, .box27 img, .box28 img, .box29 img
+, .box30 img, .box31 img, .box32 img, .box33 img, .box34 img, .box35 img, .box36 img, .box37 img, .box38 img
+, .box39 img, .box40 img, .box41 img, .box42 img, .box43 img, .box44 img, .box45 img, .box46 img, .box47 img
+, .box48 img, .box49 img, .box50 img, .box51 img, .box52 img, .box53 img, .box54 img, .box55 img, .box56 img
+, .box57 img, .box58 img, .box59 img, .box60 img, .box61 img, .box62 img, .box63 img, .box64 img, .box65 img
+, .box66 img, .box67 img, .box68 img, .box69 img, .box70 img, .box71 img {
   width: 300px;
   height: 300px;
   border-radius: 25px 25px 0px 0px;
-  padding-top: 5px;
+  padding-top: 0px;
 }
 
 .box a{
@@ -120,7 +164,8 @@ header nav ul li a.active{
   cursor: pointer;
   text-align: center;
   color: darkred;
-  font-size: larger;
+  font-size: x-large;
+  font-weight: bolder;
   bottom: 73px;
 
 }
@@ -129,12 +174,22 @@ header nav ul li a.active{
 .box:hover .cart1, .box:hover .cart2, .box:hover .cart3, .box:hover .cart4, .box:hover .cart5
 , .box:hover .cart6, .box:hover .cart7, .box:hover .cart8, .box:hover .cart9, .box:hover .cart10
 , .box:hover .cart11, .box:hover .cart12, .box:hover .cart13, .box:hover .cart14, .box:hover .cart15
-, .box:hover .cart16  {
-    bottom: 51px;
+, .box:hover .cart16, .box:hover .cart17, .box:hover .cart18, .box:hover .cart19, .box:hover .cart20
+, .box:hover .cart21, .box:hover .cart22, .box:hover .cart23, .box:hover .cart24, .box:hover .cart25
+, .box:hover .cart26, .box:hover .cart27, .box:hover .cart28, .box:hover .cart29, .box:hover .cart30
+, .box:hover .cart31, .box:hover .cart32, .box:hover .cart33, .box:hover .cart34, .box:hover .cart35
+, .box:hover .cart36, .box:hover .cart37, .box:hover .cart38, .box:hover .cart39, .box:hover .cart40
+, .box:hover .cart41, .box:hover .cart42, .box:hover .cart43, .box:hover .cart44, .box:hover .cart45
+, .box:hover .cart46, .box:hover .cart47, .box:hover .cart48, .box:hover .cart49, .box:hover .cart50
+, .box:hover .cart51, .box:hover .cart52, .box:hover .cart53, .box:hover .cart54, .box:hover .cart55
+, .box:hover .cart56, .box:hover .cart57, .box:hover .cart58, .box:hover .cart59, .box:hover .cart60
+, .box:hover .cart61, .box:hover .cart62, .box:hover .cart63, .box:hover .cart64, .box:hover .cart65
+, .box:hover .cart606{
+    bottom: 57px;
     position: relative;
     opacity: 1;
-    padding-left: 115px;
-    padding-right: 115px;
+    padding-left: 106px;
+    padding-right: 106px;
     text-decoration: none;
 }
 
