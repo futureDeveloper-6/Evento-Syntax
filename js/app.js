@@ -68,7 +68,7 @@ function setItems(product) {
   let cartItems = localStorage.getItem('productsInCart');
   cartItems = JSON.parse(cartItems);
   // console.log(cartItems);
-  if (cartItems != null) {
+  if (cartItems !== null) {
     if (cartItems[product.name] == undefined) {
       cartItems = {
         ...cartItems,
@@ -91,12 +91,12 @@ function setItems(product) {
 function totalCost(product) {
   console.log('price :', product.price);
 
-  // let cartCost = localStorage.getItem('totalCost');
+  let cartCost = localStorage.getItem('totalCost');
 
-  if (cartCost != null) {
+  if (cartCost !== null) {
     cartCost = parseFloat(cartCost);
     localStorage.setItem('totalCost', cartCost + product.price);
-
+    console.log('cart', cartCost);
   }
   else {
     localStorage.setItem('totalCost', product.price);
@@ -120,49 +120,54 @@ function displayCart() {
 
     productContainer.innerHTML = '';
     Object.values(cartItems).map(item => {
-      productContainer.innerHTML += ` 
-      <div class ="product">
-      <ion-icon name="close-outline"></ion-icon>
-      <img src="./img/lights/${item.name}.jpg" alt="damaged picture from display">
-      <span>${item.name}</span>
-      </div>
-
-      <div class ="price" >JD${item.price}</div>
-
-      <div class ="quantity" >
-      <ion-icon  class="decrease" name="caret-back-outline"></ion-icon>
-      <span>${item.inCart}</span>
-      <ion-icon name="caret-forward-outline"></ion-icon>
-      </div>
-      <div class="total">
-         JD ${item.inCart * item.price}
-      <div>
-  
-    `;
+      productContainer.innerHTML += `<div class ="product">
+      <img src="./img/lights/${item.name}.jpg" alt="damaged picture from display"></div>
+    <div class ="price" ><span>JD ${item.price}</span></div>
+    <div class ="quantity" >
+    <ion-icon  class="decrease" name="caret-back-outline"></ion-icon>
+    <span>${item.inCart}</span>
+    <ion-icon class="increase" name="caret-forward-outline"></ion-icon>
+    </div>
+    <div class="total"><span>JD ${item.inCart * item.price}</span></div>`;
 
 
     });
-        productContainer.innerHTML += `
-        <div class="basketTotalContainer">
-        <h4 class="basketTotalTitle">
-        Basket Total
-        </h4>
-        <h4 class="basketTotal">
-        JD ${cartCost}
-        </h4>
-
-
-        `;
-
+    productContainer.innerHTML += `<div class="basketTotalContainer">
+    <h4 class="basketTotalTitle">Basket Total</h4>
+    <h4 class="basketTotal">JD ${cartCost}</h4></div>`;
+    
   }
+  console.log(cartCost);
 }
 
+
+
+// activate arrows
+
+// let increaseBtn = document.getElementsByClassName("increase");
+// increaseBtn.addEventListener('click',increase);
+// function increase(event) {
+//   let cartItems = localStorage.getItem("cartNumbers");
+//   cartItems=JSON.parse(cartItems);
+//   if (cartItems == null) {
+//     cartItems += cartItems
+//   }
+// }
+// increase();
 onLoadCartNumbers();
 displayCart();
 
 
 
 
+
+
+
+// add checkout button
+
+function togglePopup() {
+  document.getElementById("popup-1").classList.toggle("active");
+}
 
 
 
