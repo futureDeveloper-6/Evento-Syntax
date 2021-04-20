@@ -15,6 +15,11 @@ let products = [
   { name: 'light8', price: 16.80, inCart: 0 },
   { name: 'light9', price: 13.75, inCart: 0 },
   { name: 'light10', price: 12.90, inCart: 0 },
+  { name: 'light11', price: 12.90, inCart: 0 },
+  { name: 'light12', price: 12.90, inCart: 0 },
+  { name: 'light13', price: 12.90, inCart: 0 },
+  { name: 'light14', price: 12.90, inCart: 0 },
+  { name: 'light15', price: 12.90, inCart: 0 },
   
   // for balloons
   { name: 'balloon1', price: 12.90, inCart: 0 },
@@ -32,7 +37,6 @@ let products = [
   { name: 'balloon13', price: 12.90, inCart: 0 },
   { name: 'balloon14', price: 12.90, inCart: 0 },
   { name: 'balloon15', price: 12.90, inCart: 0 },
-  { name: 'balloon16', price: 12.90, inCart: 0 },
 
   // for candels
   { name: 'candel1', price: 12.90, inCart: 0 },
@@ -46,6 +50,10 @@ let products = [
   { name: 'candel9', price: 12.90, inCart: 0 },
   { name: 'candel10', price: 12.90, inCart: 0 },
   { name: 'candel11', price: 12.90, inCart: 0 },
+  { name: 'candel12', price: 12.90, inCart: 0 },
+  { name: 'candel13', price: 12.90, inCart: 0 },
+  { name: 'candel14', price: 12.90, inCart: 0 },
+  { name: 'candel15', price: 12.90, inCart: 0 },
 
   // for roses
   { name: 'rose1', price: 12.90, inCart: 0 },
@@ -61,6 +69,8 @@ let products = [
   { name: 'rose11', price: 12.90, inCart: 0 }, 
   { name: 'rose12', price: 12.90, inCart: 0 }, 
   { name: 'rose13', price: 12.90, inCart: 0 },
+  { name: 'rose14', price: 12.90, inCart: 0 },
+  { name: 'rose15', price: 12.90, inCart: 0 },
   
   // for tables
   { name: 'table1', price: 12.90, inCart: 0 },
