@@ -262,9 +262,8 @@ header nav ul li a.active{
   
   }
     
-    .basketTotalContainer {
+    /* .basketTotalContainer {
         margin-bottom:25px ;
-      /* display: flex; */
       position: fixed;
       left: 78%;
       top: 50%;
@@ -280,7 +279,47 @@ header nav ul li a.active{
       margin-bottom: 25px;
       line-height: 30px;
       
+    } */
+    #cash {
+      margin-bottom:25px ;
+      /* display: flex; */
+      position: fixed;
+      left: 78%;
+      top: 55%;
+      width: 15%;
+      height: 75px;
+      /* border: 2px solid rgba(209, 180, 17, 0.918); */
+      text-align: center;
+      font-size: 25px;
+      padding: 8px;
+      border-radius: 10px;
+      color:#681864;
+      font-weight: bolder;
+      margin-bottom: 25px;
+      line-height: 30px;
     }
+    #bas{
+      margin-bottom:25px ;
+      /* display: flex; */
+      position: fixed;
+      left: 78%;
+      top: 50%;
+      width: 15%;
+      height: 75px;
+      border: 2px solid rgba(209, 180, 17, 0.918);
+      text-align: center;
+      font-size: 25px;
+      padding: 8px;
+      border-radius: 10px;
+      color:#681864;
+      font-weight: bolder;
+      margin-bottom: 25px;
+      line-height: 30px;
+
+    }
+
+
+
     
     /* checkout button style */
     .popup .overlay {

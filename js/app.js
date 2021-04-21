@@ -4,80 +4,80 @@
 let carts = document.querySelectorAll('.add-cart');
 let products = [
 
-  { name: 'light1', price: 15.25, inCart: 0 },
-  { name: 'light2', price: 17.55, inCart: 0 },
-  { name: 'light3', price: 19.90, inCart: 0 },
-  { name: 'light4', price: 21.90, inCart: 0 },
-  { name: 'light5', price: 26.25, inCart: 0 },
-  { name: 'light6', price: 16.70, inCart: 0 },
-  { name: 'light7', price: 17.25, inCart: 0 },
-  { name: 'light8', price: 16.80, inCart: 0 },
-  { name: 'light9', price: 13.75, inCart: 0 },
-  { name: 'light10', price: 12.90, inCart: 0 },
-  { name: 'light11', price: 12.90, inCart: 0 },
-  { name: 'light12', price: 12.90, inCart: 0 },
-  { name: 'light13', price: 12.90, inCart: 0 },
-  { name: 'light14', price: 12.90, inCart: 0 },
-  { name: 'light15', price: 12.90, inCart: 0 },
+  { name: 'light1', price: 15, inCart: 0 },
+  { name: 'light2', price: 17, inCart: 0 },
+  { name: 'light3', price: 19, inCart: 0 },
+  { name: 'light4', price: 21, inCart: 0 },
+  { name: 'light5', price: 26, inCart: 0 },
+  { name: 'light6', price: 16, inCart: 0 },
+  { name: 'light7', price: 17, inCart: 0 },
+  { name: 'light8', price: 16, inCart: 0 },
+  { name: 'light9', price: 13, inCart: 0 },
+  { name: 'light10', price: 12, inCart: 0 },
+  { name: 'light11', price: 12, inCart: 0 },
+  { name: 'light12', price: 12, inCart: 0 },
+  { name: 'light13', price: 12, inCart: 0 },
+  { name: 'light14', price: 12, inCart: 0 },
+  { name: 'light15', price: 12, inCart: 0 },
   
   // for balloons
-  { name: 'balloon1', price: 12.90, inCart: 0 },
-  { name: 'balloon2', price: 12.90, inCart: 0 },
-  { name: 'balloon3', price: 12.90, inCart: 0 },
-  { name: 'balloon4', price: 12.90, inCart: 0 },
-  { name: 'balloon5', price: 12.90, inCart: 0 },
-  { name: 'balloon6', price: 12.90, inCart: 0 },
-  { name: 'balloon7', price: 12.90, inCart: 0 },
-  { name: 'balloon8', price: 12.90, inCart: 0 },
-  { name: 'balloon9', price: 12.90, inCart: 0 },
-  { name: 'balloon10', price: 12.90, inCart: 0 },
-  { name: 'balloon11', price: 12.90, inCart: 0 },
-  { name: 'balloon12', price: 12.90, inCart: 0 },
-  { name: 'balloon13', price: 12.90, inCart: 0 },
-  { name: 'balloon14', price: 12.90, inCart: 0 },
-  { name: 'balloon15', price: 12.90, inCart: 0 },
+  { name: 'balloon1', price: 12, inCart: 0 },
+  { name: 'balloon2', price: 12, inCart: 0 },
+  { name: 'balloon3', price: 12, inCart: 0 },
+  { name: 'balloon4', price: 12, inCart: 0 },
+  { name: 'balloon5', price: 12, inCart: 0 },
+  { name: 'balloon6', price: 12, inCart: 0 },
+  { name: 'balloon7', price: 12, inCart: 0 },
+  { name: 'balloon8', price: 12, inCart: 0 },
+  { name: 'balloon9', price: 12, inCart: 0 },
+  { name: 'balloon10', price: 12, inCart: 0 },
+  { name: 'balloon11', price: 12, inCart: 0 },
+  { name: 'balloon12', price: 12, inCart: 0 },
+  { name: 'balloon13', price: 12, inCart: 0 },
+  { name: 'balloon14', price: 12, inCart: 0 },
+  { name: 'balloon15', price: 12, inCart: 0 },
 
   // for candels
-  { name: 'candel1', price: 12.90, inCart: 0 },
-  { name: 'candel2', price: 12.90, inCart: 0 },
-  { name: 'candel3', price: 12.90, inCart: 0 },
-  { name: 'candel4', price: 12.90, inCart: 0 },
-  { name: 'candel5', price: 12.90, inCart: 0 },
-  { name: 'candel6', price: 12.90, inCart: 0 },
-  { name: 'candel7', price: 12.90, inCart: 0 },
-  { name: 'candel8', price: 12.90, inCart: 0 },
-  { name: 'candel9', price: 12.90, inCart: 0 },
-  { name: 'candel10', price: 12.90, inCart: 0 },
-  { name: 'candel11', price: 12.90, inCart: 0 },
-  { name: 'candel12', price: 12.90, inCart: 0 },
-  { name: 'candel13', price: 12.90, inCart: 0 },
-  { name: 'candel14', price: 12.90, inCart: 0 },
-  { name: 'candel15', price: 12.90, inCart: 0 },
+  { name: 'candel1', price: 12, inCart: 0 },
+  { name: 'candel2', price: 12, inCart: 0 },
+  { name: 'candel3', price: 12, inCart: 0 },
+  { name: 'candel4', price: 12, inCart: 0 },
+  { name: 'candel5', price: 12, inCart: 0 },
+  { name: 'candel6', price: 12, inCart: 0 },
+  { name: 'candel7', price: 12, inCart: 0 },
+  { name: 'candel8', price: 12, inCart: 0 },
+  { name: 'candel9', price: 12, inCart: 0 },
+  { name: 'candel10', price: 12, inCart: 0 },
+  { name: 'candel11', price: 12, inCart: 0 },
+  { name: 'candel12', price: 12, inCart: 0 },
+  { name: 'candel13', price: 12, inCart: 0 },
+  { name: 'candel14', price: 12, inCart: 0 },
+  { name: 'candel15', price: 12, inCart: 0 },
 
   // for roses
-  { name: 'rose1', price: 12.90, inCart: 0 },
-  { name: 'rose2', price: 12.90, inCart: 0 },
-  { name: 'rose3', price: 12.90, inCart: 0 },
-  { name: 'rose4', price: 12.90, inCart: 0 },
-  { name: 'rose5', price: 12.90, inCart: 0 },
-  { name: 'rose6', price: 12.90, inCart: 0 },
-  { name: 'rose7', price: 12.90, inCart: 0 },
-  { name: 'rose8', price: 12.90, inCart: 0 },
-  { name: 'rose9', price: 12.90, inCart: 0 },
-  { name: 'rose10', price: 12.90, inCart: 0 },
-  { name: 'rose11', price: 12.90, inCart: 0 }, 
-  { name: 'rose12', price: 12.90, inCart: 0 }, 
-  { name: 'rose13', price: 12.90, inCart: 0 },
-  { name: 'rose14', price: 12.90, inCart: 0 },
-  { name: 'rose15', price: 12.90, inCart: 0 },
+  { name: 'rose1', price: 12, inCart: 0 },
+  { name: 'rose2', price: 12, inCart: 0 },
+  { name: 'rose3', price: 12, inCart: 0 },
+  { name: 'rose4', price: 12, inCart: 0 },
+  { name: 'rose5', price: 12, inCart: 0 },
+  { name: 'rose6', price: 12, inCart: 0 },
+  { name: 'rose7', price: 12, inCart: 0 },
+  { name: 'rose8', price: 12, inCart: 0 },
+  { name: 'rose9', price: 12, inCart: 0 },
+  { name: 'rose10', price: 12, inCart: 0 },
+  { name: 'rose11', price: 12, inCart: 0 }, 
+  { name: 'rose12', price: 12, inCart: 0 }, 
+  { name: 'rose13', price: 12, inCart: 0 },
+  { name: 'rose14', price: 12, inCart: 0 },
+  { name: 'rose15', price: 12, inCart: 0 },
   
   // for tables
-  { name: 'table1', price: 12.90, inCart: 0 },
-  { name: 'table2', price: 12.90, inCart: 0 },
-  { name: 'table3', price: 12.90, inCart: 0 },
-  { name: 'table4', price: 12.90, inCart: 0 },
-  { name: 'table5', price: 12.90, inCart: 0 },
-  { name: 'table6', price: 12.90, inCart: 0 },
+  { name: 'table1', price: 12, inCart: 0 },
+  { name: 'table2', price: 12, inCart: 0 },
+  { name: 'table3', price: 12, inCart: 0 },
+  { name: 'table4', price: 12, inCart: 0 },
+  { name: 'table5', price: 12, inCart: 0 },
+  { name: 'table6', price: 12, inCart: 0 },
 
 ];
 
@@ -157,7 +157,7 @@ function totalCost(product) {
   let cartCost = localStorage.getItem('totalCost');
 
   if (cartCost !== null) {
-    cartCost = parseFloat(cartCost);
+    cartCost = parseInt(cartCost);
     localStorage.setItem('totalCost', cartCost + product.price);
     console.log('cart', cartCost);
   }
@@ -193,7 +193,7 @@ function displayCart() {
 
     <div class="box box6">
     <button class="btn minus-btn disabled" type="button">-</button>
-    <input type="text" class="quantityplus" value="${item.inCart}">
+    <input type="text"  class="quantityplus" value="${item.inCart}">
     <button class="btn plus-btn " type="button">+</button>
     </div>
     
@@ -201,9 +201,9 @@ function displayCart() {
 
 
     
-     productContainer.innerHTML += `<div class="basketTotalContainer">
-     <h4 class="basketTotalTitle">Basket Total</h4>
-    <h4 class="basketTotal">JD ${cartCost}</h4></div>`;
+    //  productContainer.innerHTML += `<div class="basketTotalContainer">
+    //  <h4 class="basketTotalTitle">Basket Total</h4>
+    // <h4 class="basketTotal">JD ${cartCost}</h4></div>`;
     
   
   console.log(cartCost);
@@ -228,16 +228,51 @@ let val=0;
 //taking price value in variable
 let price = document.querySelector(".price11").innerText;
 // price calculatin function
- function priceTotal(v,index) {
+let totalOfTotal=0;
+let container=document.getElementsByClassName('products')[0];
+let totalElement=document.createElement('div')
+totalElement.id="cash";
+container.appendChild(totalElement);
+let cashText=document.createElement('p');
+cashText.id="bas"
+container.appendChild(cashText);
+cashText.textContent="Total cost in JD"
+
+totalElement.textContent=cartCost;
+function priceTotal(v,index) {
   //  console.log("v",i)
      let total = val * price;
+     console.log('inside the pricetotal',total);
+
+    //  totalOfTotal+=val * price;;
+    //  console.log('ttttoooot', totalOfTotal);
+    
+
+
      let prices=document.querySelectorAll(".price11");
      for (let i = 0; i < prices.length; i++) {
       //  const element = array[i];
       prices[index].innerText=total;
+      console.log('inside for',prices[index].innerText);
+      let number=parseInt(prices[i].innerText) 
+      
+      
+    }
+    console.log(prices)
+    let totalTest=0
+     let numbers=0
+
+     for (let i = 0; i < prices.length; i++) {
+       console.log(prices[i].textContent);
+       numbers=parseInt(prices[i].textContent);
+       totalTest+=numbers
+       
+
+      
        
      }
-     console.log(prices)
+     console.log('TOTAL AFTER',totalTest);
+     totalElement.innerText=totalTest
  }
 //plus btn 
 let plus = document.querySelectorAll(".plus-btn");
@@ -249,10 +284,13 @@ for (let i = 0; i < plus.length; i++) {
   plus[i].addEventListener('click',function () {
     // getting value of input
      val =valueCount2[i].value;
-     console.log(valueCount2[i])
+     console.log('value',valueCount2[i].value)
      //input value increament by 1
      val++;
+
+
      cartCost+=cartCost;
+     console.log('checking cart cost',cartCost);
 
      //setting increament input value
      valueCount2[i].value= val;
@@ -302,6 +340,7 @@ function togglePopup() {
   
   if(document.getElementById("popup-1").classList.toggle("active")){
    localStorage.setItem("cartNumbers",0)
+   localStorage.setItem("productsInCart",0)
    document.querySelector('.cart span').textContent = 0;
    document.querySelector('.products').textContent='';
    
