@@ -1,4 +1,4 @@
-
+'use strict'
 
 
 let carts = document.querySelectorAll('.add-cart');
@@ -298,19 +298,25 @@ for (let i = 0; i < plus.length; i++) {
   })
   }
   
-// add checkout button
+// add checkout button to reset cart page
 
-// function togglePopup() {
-//   document.getElementById("popup-1").classList.toggle("active");
+function togglePopup() {
   
-// }
-document.getElementById('check').addEventListener('click', checkOut);
-function checkOut(){
-  alert('Thanks for visiting our website and buying from us')
-   localStorage.setItem('productsInCart', 0);
-   localStorage.setItem('cartNumbers', " ");
-   localStorage.setItem('totalCost', 0);
-   location.reload(); 
+  if(document.getElementById("popup-1").classList.toggle("active")){
+   localStorage.setItem("cartNumbers",0)
+   document.querySelector('.cart span').textContent = 0;
+   document.querySelector('.products').textContent='';
+   
+   cartCost=0;
+   
+
+   
+
+   localStorage.setItem("totalCost",0)
+
+   
+   window.reload();
+  }
 }
 
 
@@ -319,6 +325,13 @@ function checkOut(){
 //   document.querySelector('.cart span').textContent = "";
 // }
 // refreshPage();
+
+//fun to display popup message after user select the product
+function togglePopup2(){
+  document.getElementById("popup-1").classList.toggle("active")
+  
+}
+
 
 
  
