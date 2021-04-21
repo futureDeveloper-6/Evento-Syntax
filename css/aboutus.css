@@ -32,9 +32,9 @@ header{
 
 header img{
   width: 160px;
-  height: 80px;
+  height: 90px;
   float: left; 
-  margin-top: 15px;
+  margin-top: 5px;
 
 
 }
@@ -44,7 +44,7 @@ header nav ul {
   float:right;
   display: flex;
   margin: 0;
-  padding: 10px;
+  padding: 5px;
 }
 
 header nav ul li a{
@@ -75,12 +75,12 @@ header nav ul li a.active{
 #row1{
   display: flex;
   margin-left: 15%;
-  margin-top: 3%;
+  margin-top: 2%;
 }
 #row2{
   display: flex;
   margin-left: 15%;
-  margin-top: 1%;
+  margin-top: 2%;
 }
 .row1{
   width: 250px;
@@ -133,10 +133,11 @@ animation-name: example;
 
 footer{
   margin: 10px;
-  height: 250px;
+  height: 500px;
   width: 100%;
   position: absolute;
   top: 800px;
+  background-color: rgba(118, 66, 126, 0.6) ;
   
 
 }
@@ -200,7 +201,7 @@ footer p{
   border-radius: 50%;
   text-align: center;
   background: white;
-  top: 262px;
+  top: 243px;
   right: 853px;
 }
 .location:hover{
