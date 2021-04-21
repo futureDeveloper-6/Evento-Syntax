@@ -146,7 +146,7 @@ animation-name: example;
 footer{
   background-image: url(../img/ballons.png);
   margin: 10px;
-  height: 250px;
+  height: 500px;
   width: 100%;
   position: relative;
   /* top: 70%; */
