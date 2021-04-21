@@ -87,12 +87,21 @@ header nav ul li a.active{
   margin-top: 50px;
   margin-left: 25px;
   margin-bottom: 50px;
+  margin-right: 50px;
     }
 
     .box1, .box2, .box3{
       border-radius: 25px;
-      background-color: #c241bb;
+      background-color: rgba(118, 66, 126, 0.6);
     }
+
+    .box2{
+      margin-right: 20px;
+    }
+
+     .box3{
+      margin-right: 400px;
+     }
 
     .box1 h5, .box2 h5, .box3 h5{    
   padding-top: 20px; 
@@ -119,7 +128,7 @@ header nav ul li a.active{
     .box4{
       margin-right: 100px;
       position: relative;
-      left:19% ;
+      left:9% ;
     }
 
     .box4 img{
@@ -129,37 +138,31 @@ header nav ul li a.active{
       padding-top: 0px;
     }
 
-    .box5{
-      text-align: center;
-    }
 
     .box5 .price11{
       position: relative;
       top: 40%;
-      left: 5%;
-      border: #c241bb solid 5px;
+      left: 3%;
+      border: rgba(118, 66, 126, 0.6) 5px;
       font-size: 35px;
       border-radius: 10px;
       padding: 10px;
       font-family: 'Original Surfer', cursive;
-      background-color:#c241bb ;
+      background-color:rgba(118, 66, 126, 0.6) ;
 
     }
 
-    .box6 {
-      text-align: center;
-
-    }
 
     .btn{
       position: relative;
       top: 33%;
-      left: 1%;
+      /* left: 0%; */
+      right: 49%;
       font-size: 35px;
       border-radius: 10px;
       font-family: 'Original Surfer', cursive;
       background-color:rgba(209, 180, 17, 0.918) ;
-      text-align: center;
+      /* text-align: center; */
       width: 50px;
       height: 70px;
     }
@@ -167,14 +170,15 @@ header nav ul li a.active{
     .quantityplus{
       position: relative;
       top: 33%;
-      left: 1%;
+      /* left: 1%; */
+      right: 49%;
       width: 150px;
       height: 70px;
       text-align: center;
       font-size: 35px;
       border-radius: 10px;
       font-family: 'Original Surfer', cursive;
-      background-color:#c241bb ;
+      background-color:rgba(118, 66, 126, 0.6) ;
     }
   
   
@@ -476,7 +480,7 @@ footer p{
 footer{
   background-image: url(../img/ballons.png);
   margin: 10px;
-  height: 250px;
+  height: 500px;
   width: 100%;
   position: relative;
   margin-top: 50px;
