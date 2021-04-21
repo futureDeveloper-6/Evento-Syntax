@@ -207,15 +207,17 @@ function displayCart() {
     
   
   console.log(cartCost);
+ 
 });
 }
-}
-
-
-
+} 
 
 onLoadCartNumbers();
 displayCart();
+
+
+
+
 
 //  for increament and decreament from the cart page 
 
@@ -298,13 +300,27 @@ for (let i = 0; i < plus.length; i++) {
   
 // add checkout button
 
-function togglePopup() {
-  document.getElementById("popup-1").classList.toggle("active");
+// function togglePopup() {
+//   document.getElementById("popup-1").classList.toggle("active");
+  
+// }
+document.getElementById('check').addEventListener('click', checkOut);
+function checkOut(){
+  alert('Thanks for visiting our website and buying from us')
+   localStorage.setItem('productsInCart', 0);
+   localStorage.setItem('cartNumbers', " ");
+   localStorage.setItem('totalCost', 0);
+   location.reload(); 
 }
 
 
+// refreshing page //
+// function refreshPage(){
+//   document.querySelector('.cart span').textContent = "";
+// }
+// refreshPage();
 
 
-
-
+ 
+// checkOut();
 

@@ -253,8 +253,8 @@
         margin-bottom:25px ;
       /* display: flex; */
       position: fixed;
-      left: 78%;
-      top: 50%;
+      left: 82%;
+      top: 85%;
       width: 15%;
       height: 75px;
       border: 2px solid rgba(209, 180, 17, 0.918);
@@ -332,9 +332,10 @@
         border: 2px solid #681864;
         color: #681864;
         background-color: rgba(0, 0, 0, 0.08) ;
-        position: fixed;
+        /* position: fixed; */
       left: 81%;
       bottom: 30%;
+      margin-left: 85%;
 
     }
     .checkOut:hover{
