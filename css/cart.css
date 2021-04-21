@@ -381,13 +381,14 @@ header nav ul li a.active{
         font-size: 25px;
         padding: 5px;
         border-radius: 12px;
-        border: 2px solid #681864;
-        color: #681864;
+        color: #fff;
         background-color: rgba(0, 0, 0, 0.08) ;
-        /* position: fixed; */
-      left: 81%;
+        position: fixed;
+      left: 80.5%;
       bottom: 30%;
-      margin-left: 85%;
+      background-color: rgba(118, 66, 126, 0.83);
+      width: 150px;
+      height: 60px;
 
     }
     .checkOut:hover{
@@ -525,6 +526,8 @@ footer{
   position: relative;
   margin-top: 50px;
   /* top: 70%; */
+  background-color: rgba(118, 66, 126, 0.6) ;
+
 }
 
 
