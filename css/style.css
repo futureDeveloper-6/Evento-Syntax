@@ -18,8 +18,9 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    height: 120px;
-    background: rgba(0, 0, 0, 0.2) ;
+    height: 90px;
+    background-color: rgba(118, 66, 126, 0.6) ;
+    /* background-color: rgba(149, 55, 161, 0.719) ; */
 }
 
 .header{
@@ -29,8 +30,11 @@ header{
 
 header img{
     width: 160px;
+    height: 80px;
     float: left; 
     margin-top: 5px;
+
+  
 }
 
 header nav ul {
@@ -45,8 +49,8 @@ header nav ul li a{
     color:#681864;
     padding: 12px 30px;
     text-decoration: none; 
-    line-height: 120px;
-    font-size: 24px;  
+    line-height: 90px;
+    font-size: 20px;  
     font-weight: bolder;
 }
 header nav ul li a:hover{
@@ -68,16 +72,18 @@ header nav ul li a.active{
     top: 100%;
     left:3%;
   animation-name: example;
-   animation-duration: 8s;
-    animation-delay: -4s; 
-    margin-top: 150px;
+   animation-duration: 10s;
+    animation-delay: -3s; 
+    margin-top: 400px;
  } 
  
  @keyframes example {
+    /* from {top:  -2000px;}
+    to {top: 0;} */
    0%   { left:0px; top:0px;}
    25%  { left:0px; top:0px;}
-   50%  { left:0px; top:300px;}
-   75%  { left:0px; top:300px;}
+   50%  { left:0px; top:0px;}
+   75%  { left:0px; top:-250px;}
    100% { left:0px; top:0px;}
 }
     
@@ -91,7 +97,7 @@ header nav ul li a.active{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-     margin-top: 4%;  
+     margin-top: 3.5%;  
       border: 1px solid #33073169;  
       border-radius: 80px;  
 }
@@ -187,6 +193,7 @@ transition: 1s;
     font-size: 20px;
     font-weight: bolder;
     color:#31082F ;
+    
 }
 .paragraph h3{
     font-size: 30px;
@@ -198,13 +205,13 @@ transition: 1s;
 
 button{
 position: absolute;
-left: 65%;
-top: 52%;
+left: 34%;
+top: 148%;
 font-size: 20px;
 padding: 10px;
 border-radius: 5px;
-background-color: rgba(0, 0, 0, 0.2) ; ;
-color: #31082F;
+background-color: rgba(118, 66, 126, 0.6);
+color: #f8f0f8;
 
 
 }
@@ -212,6 +219,65 @@ button:hover{
 background: rgba(209, 180, 17, 0.918);
 
 }
+
+/* cards */
+.cards{
+    width:1000px;
+    display: flex;
+    position: absolute;
+    left: -50px;
+    
+}
+.cards img{
+    width: 280px;
+    height: 330px;
+    border-radius: 35px;
+    border: 1px solid #33073169; 
+    margin: 23px; 
+    margin-top: 50px ;
+    
+}
+.container {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 23px;
+    right: 0;
+    width: 280px;
+    height: 330px;
+    opacity: 0;
+    margin-top: 50px;
+    transition: .5s ease;
+    border-radius: 35px;
+    background-color: rgba(118, 66, 126, 0.83);
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 
 
 
@@ -222,7 +288,7 @@ footer{
     height: 250px;
     width: 100%;
     position: absolute;
-    top: 1000px;
+    top: 1500px;
     margin-top: 0px;
 
 }

@@ -7,8 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/form.css">
 </head>
 
@@ -18,10 +21,10 @@
             <img src="img/logo.png" alt="logo">
             <nav>
                 <ul>
-                    <li><a  href="index.html">HOME</a></li>
-                    <li><a  href="cart.html">SHOP</a></li>
-                    <li><a  class="active" href="form.html">ADD SERVICE</a></li>
-                    <li><a  href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="cart.html">SHOP</a></li>
+                    <li><a class="active" href="form.html">ADD SERVICE</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
                 </ul>
             </nav>
         </div>
@@ -33,49 +36,49 @@
             <fieldset>
 
                 <label for="companyName" id="companyName">Company Name</label>
-                <br>
-                <br>
 
-                <input type="text" autocomplete="off" placeholder="Enter the name" id="companyField"
+                <br>
+                <br>
+                <input type="text" autocomplete="off" placeholder="Enter company name" id="companyField"
                     name="companyField" class="inputForm">
                 <br>
                 <br>
-                <br>
+
 
                 <label for="serviceName">The Service</label>
                 <br>
                 <br>
 
                 <input type="text" autocomplete="off" placeholder="Enter the service name" id="serviceField"
-                    name="serviceField"  class="inputForm">
+                    name="serviceField" class="inputForm">
                 <br>
                 <br>
-                <br>
+
 
                 <label for="price">The price</label>
                 <br>
                 <br>
 
-                <input type="number" step="0.01" placeholder="Enter the price" id="priceField" name="priceField"  class="inputForm">
-                <br>
-                <br>
-                <br>
-
-
-                <label for="contact">Contact Number</label>
-                <br>
-                <br>
-
-                <input type="number" step="0.01" placeholder="Enter phone number " id="contact" name="contact"  class="inputForm">
-                <br>
+                <input type="number" step="0.01" placeholder="Enter the price" id="priceField" name="priceField"
+                    class="inputForm">
                 <br>
                 <br>
 
 
-                <label for="urlField"> The link for service</label>
+
+                <label for="contact">Your Contact</label>
                 <br>
                 <br>
-                <input type="url" step="0.01" placeholder="Enter url for service" id="urlField" name="urlField"  class="inputForm">
+
+                <input type="text"  autocomplete="off" placeholder="company contact " id="contact" name="contact" class="inputForm">
+                <br>
+                <br>
+
+
+                <label for="urlField"> Service URL</label>
+                <br>
+                <br>
+                <input type="url"  autocomplete="off" placeholder="Enter Service URL" id="urlField" name="urlField" class="inputForm">
 
                 <!-- <label for="imgField">service image</label>
                 <br>
@@ -83,25 +86,45 @@
                 <!-- <input type="file" src="" id="imgField" name="imgField" height="200" width="100"> -->
                 <br>
                 <br>
-                <label for="serviceDescribtion"> Add description for service</label>
+                <label for="serviceDescription">Description</label>
                 <br>
                 <br>
-                <textarea id="serviceDescribtion" name="serviceDescribtion"  class="inputForm">description...</textarea>
+                <textarea id="serviceDescribtion" name="serviceDescribtion" class="inputForm"
+                    placeholder="Description..."></textarea>
                 <br>
                 <br>
-                <br>
-              
-                <input type="submit" value="click here to add service"  class="input"  >
+                <div class="popup" id="popup-1">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <div class="close-btn" onclick="togglePopup()">&times;</div>
+                        <p> Thanks for contact us.
+                             <br>
+                             We will contact back within 5-7 working days.
+                         </p>
+                    </div>
+                </div>
+        
+                <button onclick="togglePopup()">Submit</button>
+
+
+                <!-- <input type="submit" value="submit" class="input"> -->
             </fieldset>
         </form>
-        <div id="theResults">
+        <div id="theResults"></div>
 
-        </div>
+
+
+        <!-- <div class="animation">
+            <img class="animation" src="img/ballons.png" alt="animation">
+        </div> -->
 
     </main>
-    <div class="animation">
-        <img class="animation" src="img/ballons.png" alt="animation">
-    </div>
+
+
+
+
+
+
 
     <footer>
         <hr color="#31082F" width="95%">
@@ -123,15 +146,13 @@
                             src="img/insta.png" alt=""></a></li>
             </ul>
         </div>
-        <div class="map">
-            <a target="_blank"
-                href="https://www.google.jo/maps/place/%D9%83%D9%84%D9%8A%D8%A9+%D9%84%D9%88%D9%85%D9%8A%D9%86%D9%88%D8%B3+%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%B9%D9%8A%D8%A9+%D8%A7%D9%84%D8%AA%D9%82%D9%86%D9%8A%D8%A9+-+(Luminus+Technical+University+College+(LTUC%E2%80%AD/@31.8979365,35.8710084,17z/data=!3m1!4b1!4m5!3m4!1s0x151ca7e4aee722d5:0x8693a9183825010b!8m2!3d31.897932!4d35.8688197"><img
-                    class="location" src="img/location.png" alt="location"></a>
-            <a class="adress-link"
-                href="https://www.google.jo/maps/place/%D9%83%D9%84%D9%8A%D8%A9+%D9%84%D9%88%D9%85%D9%8A%D9%86%D9%88%D8%B3+%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%B9%D9%8A%D8%A9+%D8%A7%D9%84%D8%AA%D9%82%D9%86%D9%8A%D8%A9+-+(Luminus+Technical+University+College+(LTUC%E2%80%AD/@31.8979365,35.8710084,17z/data=!3m1!4b1!4m5!3m4!1s0x151ca7e4aee722d5:0x8693a9183825010b!8m2!3d31.897932!4d35.8688197">
-                Amman-Airport Road</a>
-        </div>
+
+        <!-- <img class="background" src="img/ballons.png" alt="background img"> -->
+
     </footer>
+
+
+
     <script src="js/form.js"> </script>
 
 </body>
