@@ -265,8 +265,8 @@ header nav ul li a.active{
     /* .basketTotalContainer {
         margin-bottom:25px ;
       position: fixed;
-      left: 78%;
-      top: 50%;
+      left: 82%;
+      top: 85%;
       width: 15%;
       height: 75px;
       border: 2px solid rgba(209, 180, 17, 0.918);
@@ -381,12 +381,14 @@ header nav ul li a.active{
         font-size: 25px;
         padding: 5px;
         border-radius: 12px;
-        border: 2px solid #681864;
-        color: #681864;
+        color: #fff;
         background-color: rgba(0, 0, 0, 0.08) ;
         position: fixed;
-      left: 81%;
+      left: 80.5%;
       bottom: 30%;
+      background-color: rgba(118, 66, 126, 0.83);
+      width: 150px;
+      height: 60px;
 
     }
     .checkOut:hover{
@@ -524,6 +526,8 @@ footer{
   position: relative;
   margin-top: 50px;
   /* top: 70%; */
+  background-color: rgba(118, 66, 126, 0.6) ;
+
 }
 
 

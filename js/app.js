@@ -207,15 +207,17 @@ function displayCart() {
     
   
   console.log(cartCost);
+ 
 });
 }
-}
-
-
-
+} 
 
 onLoadCartNumbers();
 displayCart();
+
+
+
+
 
 //  for increament and decreament from the cart page 
 
@@ -357,6 +359,11 @@ function togglePopup() {
 }
 
 
+// refreshing page //
+// function refreshPage(){
+//   document.querySelector('.cart span').textContent = "";
+// }
+// refreshPage();
 
 //fun to display popup message after user select the product
 function togglePopup2(){
@@ -366,6 +373,6 @@ function togglePopup2(){
 
 
 
-
-
+ 
+// checkOut();
 
