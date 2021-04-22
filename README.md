@@ -6,8 +6,8 @@ It is project to plan companies' events and provid all their requests like produ
 Group members:
 Amara albalkhi
 Haneen abonaser
-motasim alazzam
-Sanabel abu ezbead
+Motasim alazzam
+Sanabel Abu Ezbead
 Eman almkhareez
 Reem bani ali 
 
