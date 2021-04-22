@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css">
+    <ion-icon src="/path/to/external/file.svg"></ion-icon>
     <link rel="stylesheet" href="css/aboutus.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
@@ -22,6 +23,11 @@
                     <li><a  href="cart.html">SHOP</a></li>
                     <li><a  href="form.html">ADD SERVICE</a></li>
                     <li><a class="active"  href="aboutus.html">ABOUT US</a></li>
+                    <li class="cart">
+                        <a href="cart.html" id="basket">
+                            <ion-icon name="basket" style="width: 30px; height: 30px; padding-top: 20px;">Cart </ion-icon><span>0</span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -55,8 +61,9 @@
                 <img class="animation" src="img/ballons.png" alt="animation">
             </div>
     </main>
+    <hr color="#31082F" width="95%" style="position: absolute; top: 113%; left: 2.5%;">
     <footer>
-        <hr color="#31082F" width="95%">
+    
         <h2>Evento Syntax </h2>
         <div class="contact">
             <a href="mailto:evento.syntax">Email Evento Syntax</a>
@@ -84,6 +91,9 @@
                 Amman-Airport Road</a>
         </div>
     </footer>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="js/app.js"></script>
+
 
 </body>
 
