@@ -4,6 +4,21 @@
 
 
 
+## Group members:
+
+Amara albalkhi
+
+Haneen abonaser
+
+Motasim alazzam
+
+Sanabel abu ezbead
+
+Eman almkhareez
+
+Reem bani ali 
+
+
 
 # PROBLEM DOMAIN 
 
@@ -38,18 +53,40 @@ YouTube
 
 
 
-## Group members:
+## User Stories
 
-Amara albalkhi
+1. ***As a user I want to see website's name and some definition of website's goals and funding resources.***
 
-Haneen abonaser
+2. ***As a user I want to see some nice style that giving a comforte for me.***
 
-Motasim alazzam
+3. ***As a user I want to see a readable font size and family.***
 
-Sanabel abu ezbead
+4. ***As a user I want to use some functionality that make the experiement easier.***
 
-Eman almkhareez
+5. ***As a user I want to see all products in shop page and when I choose any product  then save this product  inside cart page.***
 
-Reem bani ali 
+6. ***As a user I want to see if I can add sevice to share it with the website.***
+
+7. ***As a user I want to see header that contain all pages and some information about the development team.***
+
+**Home Page**
+
+![](images/w1.jpg)
+
+**Shop Page** 
+
+![](images/w2.jpg)
+
+**Cart Page**
+
+![](images/w5.jpg)
+
+**Form Page**
+
+![](images/w3.jpg)
+
+**About Us Page**
+
+![](images/w4.jpg)
 
 ![logo](img.png)
