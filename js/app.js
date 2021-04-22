@@ -1,4 +1,4 @@
-
+'use strict'
 
 
 let carts = document.querySelectorAll('.add-cart');
@@ -296,12 +296,34 @@ for (let i = 0; i < plus.length; i++) {
   })
   }
   
-// add checkout button
+// add checkout button to reset cart page
 
 function togglePopup() {
-  document.getElementById("popup-1").classList.toggle("active");
+  
+  if(document.getElementById("popup-1").classList.toggle("active")){
+   localStorage.setItem("cartNumbers",0)
+   document.querySelector('.cart span').textContent = 0;
+   document.querySelector('.products').textContent='';
+   
+   cartCost=0;
+   
+
+   
+
+   localStorage.setItem("totalCost",0)
+
+   
+   window.reload();
+  }
 }
 
+
+
+//fun to display popup message after user select the product
+function togglePopup2(){
+  document.getElementById("popup-1").classList.toggle("active")
+  
+}
 
 
 
